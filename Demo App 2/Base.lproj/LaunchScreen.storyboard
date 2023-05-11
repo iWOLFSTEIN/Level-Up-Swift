@@ -16,7 +16,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Demo Project 2 Logo" translatesAutoresizingMaskIntoConstraints="NO" id="fyp-ql-Pxj">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="app_logo" translatesAutoresizingMaskIntoConstraints="NO" id="fyp-ql-Pxj">
                                 <rect key="frame" x="86" y="390.33333333333331" width="218" height="63.333333333333314"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="63.25" id="0rS-yI-afG"/>
@@ -38,7 +38,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Demo Project 2 Logo" width="72.666664123535156" height="21"/>
+        <image name="app_logo" width="218.10600280761719" height="63.254001617431641"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
