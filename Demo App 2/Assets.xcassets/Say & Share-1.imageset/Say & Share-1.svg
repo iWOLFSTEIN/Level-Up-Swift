@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="48.763" height="48" viewBox="0 0 48.763 48">
+  <g id="Say_Share" data-name="Say &amp; Share" transform="translate(279.763 -663)">
+    <g id="Rectangle_3196" data-name="Rectangle 3196" transform="translate(-279 663)" fill="#fff" stroke="#707070" stroke-width="1" opacity="0">
+      <rect width="48" height="48" stroke="none"/>
+      <rect x="0.5" y="0.5" width="47" height="47" fill="none"/>
+    </g>
+    <g id="Group_8128" data-name="Group 8128" transform="translate(-280.979 666.818)">
+      <path id="Path_10894" data-name="Path 10894" d="M38.814,23.35a10.131,10.131,0,1,0-3.464,3.464l4.274,1.447a.591.591,0,0,0,.154,0,.482.482,0,0,0,.482-.637Z" transform="translate(-9.326)" fill="none" stroke="#1f69ff" stroke-linecap="round" stroke-width="1.5"/>
+      <g id="Group_7778" data-name="Group 7778" transform="translate(14.545 16.685)">
+        <path id="Path_10895" data-name="Path 10895" d="M30.921,27.451A1.447,1.447,0,1,1,29.473,26h0A1.448,1.448,0,0,1,30.921,27.451Z" transform="translate(-28.026 -26.004)" fill="#007aff"/>
+        <path id="Path_10896" data-name="Path 10896" d="M39.473,26a1.447,1.447,0,1,1-1.447,1.447h0A1.448,1.448,0,0,1,39.473,26Z" transform="translate(-33.202 -26.004)" fill="#007aff"/>
+        <path id="Path_10897" data-name="Path 10897" d="M49.473,28.9a1.447,1.447,0,1,1,1.447-1.447A1.447,1.447,0,0,1,49.473,28.9Z" transform="translate(-38.377 -26.004)" fill="#007aff"/>
+      </g>
+      <path id="Path_10898" data-name="Path 10898" d="M9.616,18.24a9.166,9.166,0,0,0-6.33,13.754L2.013,35.82a.5.5,0,0,0,.458.637.591.591,0,0,0,.154,0l3.826-1.274a9.166,9.166,0,0,0,9.827-.265" transform="translate(0 -5.301)" fill="none" stroke="#1f69ff" stroke-linecap="round" stroke-width="1.5"/>
+    </g>
+  </g>
+</svg>

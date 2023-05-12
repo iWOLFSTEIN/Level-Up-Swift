@@ -48,6 +48,17 @@ class LoginViewController: UIViewController {
         
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        navigationController?.navigationBar.isHidden = true
+    }
+    
+    @IBAction func login( _ sender: UIButton) {
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let destinationVC = storyboard.instantiateViewController(withIdentifier: "TabBarViewController") as! UITabBarController
+        navigationController?.pushViewController(destinationVC, animated: true)
+    }
+    
     @objc func togglePasswordVisibility() {
         passwordTextField.isSecureTextEntry.toggle()
     }
