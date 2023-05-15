@@ -7,13 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1213DF3D2A126D67000E2FB0 /* DoTodayTableViewCalenderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1213DF3B2A126D67000E2FB0 /* DoTodayTableViewCalenderCell.swift */; };
+		1213DF3E2A126D67000E2FB0 /* DoTodayTableViewCalenderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1213DF3C2A126D67000E2FB0 /* DoTodayTableViewCalenderCell.xib */; };
 		122640CC2A0B836F004D11B3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 122640CB2A0B836F004D11B3 /* AppDelegate.swift */; };
 		122640CE2A0B836F004D11B3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 122640CD2A0B836F004D11B3 /* SceneDelegate.swift */; };
 		122640D02A0B836F004D11B3 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 122640CF2A0B836F004D11B3 /* LoginViewController.swift */; };
 		122640D32A0B836F004D11B3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 122640D12A0B836F004D11B3 /* Main.storyboard */; };
 		122640D52A0B8370004D11B3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 122640D42A0B8370004D11B3 /* Assets.xcassets */; };
 		122640D82A0B8370004D11B3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 122640D62A0B8370004D11B3 /* LaunchScreen.storyboard */; };
-		122640E62A0CD0ED004D11B3 /* LaunchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 122640E52A0CD0ED004D11B3 /* LaunchViewController.swift */; };
 		122640EC2A0D2246004D11B3 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 122640EB2A0D2246004D11B3 /* TabBarViewController.swift */; };
 		122640EE2A0D254E004D11B3 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 122640ED2A0D254E004D11B3 /* HomeViewController.swift */; };
 		122640F02A0E697C004D11B3 /* NotificationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 122640EF2A0E697C004D11B3 /* NotificationsViewController.swift */; };
@@ -25,6 +26,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1213DF3B2A126D67000E2FB0 /* DoTodayTableViewCalenderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoTodayTableViewCalenderCell.swift; sourceTree = "<group>"; };
+		1213DF3C2A126D67000E2FB0 /* DoTodayTableViewCalenderCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DoTodayTableViewCalenderCell.xib; sourceTree = "<group>"; };
 		122640C82A0B836F004D11B3 /* Demo App 2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Demo App 2.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		122640CB2A0B836F004D11B3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		122640CD2A0B836F004D11B3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -33,7 +36,6 @@
 		122640D42A0B8370004D11B3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		122640D72A0B8370004D11B3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		122640D92A0B8370004D11B3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		122640E52A0CD0ED004D11B3 /* LaunchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchViewController.swift; sourceTree = "<group>"; };
 		122640EB2A0D2246004D11B3 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 		122640ED2A0D254E004D11B3 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		122640EF2A0E697C004D11B3 /* NotificationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsViewController.swift; sourceTree = "<group>"; };
@@ -58,6 +60,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1213DF3A2A126CEB000E2FB0 /* NotificationScreen */ = {
+			isa = PBXGroup;
+			children = (
+				122640EF2A0E697C004D11B3 /* NotificationsViewController.swift */,
+				122640F12A0E6C45004D11B3 /* NotificationTableViewCell.swift */,
+				122640F22A0E6C45004D11B3 /* NotificationTableViewCell.xib */,
+			);
+			path = NotificationScreen;
+			sourceTree = "<group>";
+		};
 		122640BF2A0B836F004D11B3 = {
 			isa = PBXGroup;
 			children = (
@@ -86,14 +98,13 @@
 				122640D42A0B8370004D11B3 /* Assets.xcassets */,
 				122640D62A0B8370004D11B3 /* LaunchScreen.storyboard */,
 				122640D92A0B8370004D11B3 /* Info.plist */,
-				122640E52A0CD0ED004D11B3 /* LaunchViewController.swift */,
 				122640EB2A0D2246004D11B3 /* TabBarViewController.swift */,
 				122640ED2A0D254E004D11B3 /* HomeViewController.swift */,
-				122640EF2A0E697C004D11B3 /* NotificationsViewController.swift */,
-				122640F12A0E6C45004D11B3 /* NotificationTableViewCell.swift */,
-				122640F22A0E6C45004D11B3 /* NotificationTableViewCell.xib */,
+				1213DF3A2A126CEB000E2FB0 /* NotificationScreen */,
 				122640F52A123415004D11B3 /* SettingsViewController.swift */,
 				12CDAD442A12531800CA9A86 /* DoTodayViewController.swift */,
+				1213DF3B2A126D67000E2FB0 /* DoTodayTableViewCalenderCell.swift */,
+				1213DF3C2A126D67000E2FB0 /* DoTodayTableViewCalenderCell.xib */,
 			);
 			path = "Demo App 2";
 			sourceTree = "<group>";
@@ -175,6 +186,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1213DF3E2A126D67000E2FB0 /* DoTodayTableViewCalenderCell.xib in Resources */,
 				122640F42A0E6C45004D11B3 /* NotificationTableViewCell.xib in Resources */,
 				122640D82A0B8370004D11B3 /* LaunchScreen.storyboard in Resources */,
 				122640D52A0B8370004D11B3 /* Assets.xcassets in Resources */,
@@ -231,13 +243,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1213DF3D2A126D67000E2FB0 /* DoTodayTableViewCalenderCell.swift in Sources */,
 				122640D02A0B836F004D11B3 /* LoginViewController.swift in Sources */,
 				12CDAD452A12531800CA9A86 /* DoTodayViewController.swift in Sources */,
 				122640CC2A0B836F004D11B3 /* AppDelegate.swift in Sources */,
 				122640CE2A0B836F004D11B3 /* SceneDelegate.swift in Sources */,
 				122640EC2A0D2246004D11B3 /* TabBarViewController.swift in Sources */,
 				122640F32A0E6C45004D11B3 /* NotificationTableViewCell.swift in Sources */,
-				122640E62A0CD0ED004D11B3 /* LaunchViewController.swift in Sources */,
 				122640F02A0E697C004D11B3 /* NotificationsViewController.swift in Sources */,
 				122640EE2A0D254E004D11B3 /* HomeViewController.swift in Sources */,
 				122640F62A123415004D11B3 /* SettingsViewController.swift in Sources */,

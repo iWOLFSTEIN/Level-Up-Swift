@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="DoTodayTableViewCalenderCell" customModule="Demo_App_2" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="240"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="240"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CWF-uB-XHN">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="62"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FIRST 30 DAYS (DAY 2)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hvm-Q2-QR9">
+                                <rect key="frame" x="20" y="21" width="198" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="OZ1-Ke-ALX"/>
+                                    <constraint firstAttribute="width" constant="198" id="zkM-K6-8M7"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.22745098039215686" green="0.57647058823529407" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="hvm-Q2-QR9" secondAttribute="bottom" constant="20" id="2K8-g2-2UB"/>
+                            <constraint firstAttribute="height" constant="62" id="6zj-tW-gKf"/>
+                            <constraint firstItem="hvm-Q2-QR9" firstAttribute="leading" secondItem="CWF-uB-XHN" secondAttribute="leading" constant="20" id="h2q-AV-roV"/>
+                            <constraint firstItem="hvm-Q2-QR9" firstAttribute="top" secondItem="CWF-uB-XHN" secondAttribute="top" constant="21" id="n7K-32-b8B"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QIA-Pg-ZP9">
+                        <rect key="frame" x="0.0" y="82" width="320" height="141"/>
+                        <color key="backgroundColor" systemColor="systemGreenColor"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="141" id="PfL-bC-tTA"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="F5H-ud-fQ1">
+                        <rect key="frame" x="0.0" y="223" width="320" height="20"/>
+                        <color key="backgroundColor" systemColor="systemPinkColor"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="vei-Sd-Lhj"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="F5H-ud-fQ1" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="2UJ-Bt-maW"/>
+                    <constraint firstItem="CWF-uB-XHN" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="3LE-UO-GZL"/>
+                    <constraint firstItem="QIA-Pg-ZP9" firstAttribute="top" secondItem="CWF-uB-XHN" secondAttribute="bottom" constant="20" id="MJc-V2-ji5"/>
+                    <constraint firstAttribute="bottom" secondItem="F5H-ud-fQ1" secondAttribute="bottom" id="ZyB-vr-Dp7"/>
+                    <constraint firstItem="QIA-Pg-ZP9" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="dzh-WB-aLN"/>
+                    <constraint firstItem="F5H-ud-fQ1" firstAttribute="top" secondItem="QIA-Pg-ZP9" secondAttribute="bottom" id="fzH-Kw-Hd5"/>
+                    <constraint firstItem="F5H-ud-fQ1" firstAttribute="top" secondItem="QIA-Pg-ZP9" secondAttribute="bottom" id="kRs-jL-6xE"/>
+                    <constraint firstAttribute="trailing" secondItem="F5H-ud-fQ1" secondAttribute="trailing" id="lgk-cI-8ty"/>
+                    <constraint firstAttribute="trailing" secondItem="QIA-Pg-ZP9" secondAttribute="trailing" id="viQ-1Z-6g0"/>
+                    <constraint firstAttribute="trailing" secondItem="CWF-uB-XHN" secondAttribute="trailing" id="w6a-KR-x23"/>
+                    <constraint firstItem="CWF-uB-XHN" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="zIn-76-FeP"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <point key="canvasLocation" x="127.69230769230769" y="20.616113744075829"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemPinkColor">
+            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
