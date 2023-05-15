@@ -562,14 +562,61 @@
                     <view key="view" contentMode="scaleToFill" id="m0m-8x-M3C">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vxb-qS-Xk6">
+                                <rect key="frame" x="0.0" y="0.0" width="390" height="140"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Notifications" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hc3-Qz-Aow">
+                                        <rect key="frame" x="16" y="105" width="121" height="24"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="140" id="agy-iP-a4F"/>
+                                    <constraint firstItem="hc3-Qz-Aow" firstAttribute="leading" secondItem="Vxb-qS-Xk6" secondAttribute="leading" constant="16" id="pdU-WF-R9J"/>
+                                    <constraint firstAttribute="bottom" secondItem="hc3-Qz-Aow" secondAttribute="bottom" constant="11" id="y6w-mS-Gxo"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xcV-jT-vUG">
+                                <rect key="frame" x="0.0" y="140" width="390" height="621"/>
+                                <subviews>
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="4Zg-A9-L3f">
+                                        <rect key="frame" x="16" y="0.0" width="358" height="621"/>
+                                        <color key="backgroundColor" systemColor="systemBlueColor"/>
+                                    </tableView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.93725490196078431" green="0.94901960784313721" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="4Zg-A9-L3f" secondAttribute="bottom" id="2Ga-h7-u8T"/>
+                                    <constraint firstItem="4Zg-A9-L3f" firstAttribute="leading" secondItem="xcV-jT-vUG" secondAttribute="leading" constant="16" id="LZz-gw-JAs"/>
+                                    <constraint firstItem="4Zg-A9-L3f" firstAttribute="top" secondItem="xcV-jT-vUG" secondAttribute="top" id="RCF-xO-tXZ"/>
+                                    <constraint firstAttribute="trailing" secondItem="4Zg-A9-L3f" secondAttribute="trailing" constant="16" id="iIb-wp-BoX"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="YVp-dr-oRK"/>
                         <color key="backgroundColor" systemColor="systemGray2Color"/>
+                        <constraints>
+                            <constraint firstItem="Vxb-qS-Xk6" firstAttribute="leading" secondItem="YVp-dr-oRK" secondAttribute="leading" id="RMK-2v-SGE"/>
+                            <constraint firstItem="YVp-dr-oRK" firstAttribute="trailing" secondItem="xcV-jT-vUG" secondAttribute="trailing" id="XQJ-2n-fnR"/>
+                            <constraint firstItem="YVp-dr-oRK" firstAttribute="trailing" secondItem="Vxb-qS-Xk6" secondAttribute="trailing" id="b2e-9w-LsR"/>
+                            <constraint firstItem="xcV-jT-vUG" firstAttribute="leading" secondItem="YVp-dr-oRK" secondAttribute="leading" id="e2P-Id-O89"/>
+                            <constraint firstItem="xcV-jT-vUG" firstAttribute="bottom" secondItem="YVp-dr-oRK" secondAttribute="bottom" id="enA-pw-mxY"/>
+                            <constraint firstItem="Vxb-qS-Xk6" firstAttribute="top" secondItem="m0m-8x-M3C" secondAttribute="top" id="fuy-zH-0Kr"/>
+                            <constraint firstItem="xcV-jT-vUG" firstAttribute="top" secondItem="Vxb-qS-Xk6" secondAttribute="bottom" id="pv2-za-R58"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Notifications" image="Notification-1" selectedImage="Notification" id="txW-N3-Uwy"/>
+                    <connections>
+                        <outlet property="tableView" destination="4Zg-A9-L3f" id="Cdz-iH-56H"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cA9-3B-iAS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2785" y="728"/>
+            <point key="canvasLocation" x="2783.0769230769229" y="727.96208530805688"/>
         </scene>
         <!--Settings-->
         <scene sceneID="Tea-SP-z6Z">
@@ -606,6 +653,9 @@
         <image name="company_logo" width="241.63699340820312" height="16.517000198364258"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemGray2Color">
             <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
