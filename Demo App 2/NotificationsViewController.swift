@@ -19,30 +19,40 @@ class NotificationsViewController: UIViewController {
         tableView.register(notificationTableViewCellNib, forCellReuseIdentifier: NotificationTableViewCell.reusableCellIdentifier)
         tableView.delegate = self
         tableView.dataSource = self
-//        tableView.rowHeight = UITableView.automaticDimension
-//        tableView.estimatedRowHeight = 190
         tableView.separatorStyle = .none
+        
+        let headerView = UIView(frame: CGRect(x: 0, y: 0, width: tableView.frame.width, height: 20))
+        headerView.backgroundColor = .clear
+        tableView.tableHeaderView = headerView
+
     }
 }
 
 extension NotificationsViewController: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-           // Dequeue the reusable cell that will be displayed in the table view
-           let cell = tableView.dequeueReusableCell(withIdentifier: NotificationTableViewCell.reusableCellIdentifier) as! NotificationTableViewCell
-        let size = cell.contentView.systemLayoutSizeFitting(CGSize(width: tableView.bounds.width, height: 140))
-        return size.height
+        return 160
     }
-//    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-//        // Return automatic height
-//        return UITableView.automaticDimension
-//    }
+    
+    func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
+        return 10
+    }
+    
+    func tableView(_ tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {
+        let view = UIView(frame: CGRect(x: 0, y: 0, width: tableView.frame.width, height: 0))
+        view.backgroundColor = .clear
+        return view
+    }
 }
 
 extension NotificationsViewController: UITableViewDataSource {
     
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    func numberOfSections(in tableView: UITableView) -> Int {
         return 4
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 1
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
