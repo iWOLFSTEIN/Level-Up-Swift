@@ -20,6 +20,7 @@
 		122640F32A0E6C45004D11B3 /* NotificationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 122640F12A0E6C45004D11B3 /* NotificationTableViewCell.swift */; };
 		122640F42A0E6C45004D11B3 /* NotificationTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 122640F22A0E6C45004D11B3 /* NotificationTableViewCell.xib */; };
 		122640F62A123415004D11B3 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 122640F52A123415004D11B3 /* SettingsViewController.swift */; };
+		12CDAD452A12531800CA9A86 /* DoTodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12CDAD442A12531800CA9A86 /* DoTodayViewController.swift */; };
 		E838AA413BBD68FA93682AAA /* Pods_Demo_App_2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6DD9D2E1BF7C9C1B953CD5F /* Pods_Demo_App_2.framework */; };
 /* End PBXBuildFile section */
 
@@ -39,6 +40,7 @@
 		122640F12A0E6C45004D11B3 /* NotificationTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationTableViewCell.swift; sourceTree = "<group>"; };
 		122640F22A0E6C45004D11B3 /* NotificationTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NotificationTableViewCell.xib; sourceTree = "<group>"; };
 		122640F52A123415004D11B3 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		12CDAD442A12531800CA9A86 /* DoTodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoTodayViewController.swift; sourceTree = "<group>"; };
 		1BA3730352953A90D7C8A23C /* Pods-Demo App 2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Demo App 2.release.xcconfig"; path = "Target Support Files/Pods-Demo App 2/Pods-Demo App 2.release.xcconfig"; sourceTree = "<group>"; };
 		98933C6B6ECA2B96B7C405D2 /* Pods-Demo App 2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Demo App 2.debug.xcconfig"; path = "Target Support Files/Pods-Demo App 2/Pods-Demo App 2.debug.xcconfig"; sourceTree = "<group>"; };
 		C6DD9D2E1BF7C9C1B953CD5F /* Pods_Demo_App_2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Demo_App_2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -91,6 +93,7 @@
 				122640F12A0E6C45004D11B3 /* NotificationTableViewCell.swift */,
 				122640F22A0E6C45004D11B3 /* NotificationTableViewCell.xib */,
 				122640F52A123415004D11B3 /* SettingsViewController.swift */,
+				12CDAD442A12531800CA9A86 /* DoTodayViewController.swift */,
 			);
 			path = "Demo App 2";
 			sourceTree = "<group>";
@@ -229,6 +232,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				122640D02A0B836F004D11B3 /* LoginViewController.swift in Sources */,
+				12CDAD452A12531800CA9A86 /* DoTodayViewController.swift in Sources */,
 				122640CC2A0B836F004D11B3 /* AppDelegate.swift in Sources */,
 				122640CE2A0B836F004D11B3 /* SceneDelegate.swift in Sources */,
 				122640EC2A0D2246004D11B3 /* TabBarViewController.swift in Sources */,

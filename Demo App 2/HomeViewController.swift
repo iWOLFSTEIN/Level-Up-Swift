@@ -28,9 +28,18 @@ class HomeViewController: UIViewController {
         trainingView.layer.cornerRadius = 12
         sayAndShareView.layer.cornerRadius = 12
         quoteView.layer.cornerRadius = 20
+        
+        let doTodayTapGesture = UITapGestureRecognizer(target: self, action: #selector(goToDoTodayScreen(_:)))
+        doTodayView.isUserInteractionEnabled = true
+        doTodayView.addGestureRecognizer(doTodayTapGesture)
+        
     }
     
-
+    @objc func goToDoTodayScreen(_ gesture: UITapGestureRecognizer) {
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let destinationVC = storyboard.instantiateViewController(withIdentifier: "DoTodayViewController") as! DoTodayViewController
+        navigationController?.pushViewController(destinationVC, animated: true)
+    }
     /*
     // MARK: - Navigation
 
