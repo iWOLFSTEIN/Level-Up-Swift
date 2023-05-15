@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="48.793" height="48" viewBox="0 0 48.793 48">
+  <g id="Track_It" data-name="Track It" transform="translate(456.793 -532)">
+    <g id="Rectangle_3193" data-name="Rectangle 3193" transform="translate(-456 532)" fill="#fff" stroke="#707070" stroke-width="1" opacity="0">
+      <rect width="48" height="48" stroke="none"/>
+      <rect x="0.5" y="0.5" width="47" height="47" fill="none"/>
+    </g>
+    <g id="Group_8126" data-name="Group 8126" transform="translate(-1285.888 180.161)">
+      <g id="Group_7769" data-name="Group 7769" transform="translate(830 362.386)">
+        <rect id="Rectangle_3106" data-name="Rectangle 3106" width="4" height="7" rx="1" transform="translate(-0.112 21.452)" fill="none" stroke="#1f69ff" stroke-width="1.5"/>
+        <rect id="Rectangle_3107" data-name="Rectangle 3107" width="4" height="12" rx="1" transform="translate(7.888 16.452)" fill="none" stroke="#1f69ff" stroke-width="1.5"/>
+        <rect id="Rectangle_3108" data-name="Rectangle 3108" width="4" height="16" rx="1" transform="translate(15.888 12.452)" fill="none" stroke="#1f69ff" stroke-width="1.5"/>
+        <rect id="Rectangle_3109" data-name="Rectangle 3109" width="4" height="20" rx="1" transform="translate(23.888 8.452)" fill="none" stroke="#1f69ff" stroke-width="1.5"/>
+        <path id="Path_10888" data-name="Path 10888" d="M-3406,37.707l11.018-10.624,3.935,3.541L-3380.03,20" transform="translate(3406.509 -22)" fill="none" stroke="#1f69ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+      <path id="Path_10889" data-name="Path 10889" d="M-2857.772,34.317l5.93-.487-.447,5.314" transform="translate(3708.438 326.423)" fill="none" stroke="#1f69ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+    </g>
+  </g>
+</svg>

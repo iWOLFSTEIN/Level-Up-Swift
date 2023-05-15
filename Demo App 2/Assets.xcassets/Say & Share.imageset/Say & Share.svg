@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48">
+  <g id="Say_Share" data-name="Say &amp; Share" transform="translate(279 -663)">
+    <g id="Rectangle_3196" data-name="Rectangle 3196" transform="translate(-279 663)" fill="#fff" stroke="#707070" stroke-width="1" opacity="0">
+      <rect width="48" height="48" stroke="none"/>
+      <rect x="0.5" y="0.5" width="47" height="47" fill="none"/>
+    </g>
+    <g id="Group_12147" data-name="Group 12147" transform="translate(-279 674)">
+      <g id="Rectangle_5" data-name="Rectangle 5" transform="translate(0 1.764)" fill="none" stroke="#1f69ff" stroke-width="1.5">
+        <rect width="24.977" height="23.55" rx="4" stroke="none"/>
+        <rect x="0.75" y="0.75" width="23.477" height="22.05" rx="3.25" fill="none"/>
+      </g>
+      <line id="Line_4" data-name="Line 4" y2="5.61" transform="translate(7.295)" fill="none" stroke="#1f69ff" stroke-linecap="round" stroke-width="1.5"/>
+      <line id="Line_5" data-name="Line 5" x1="22.982" transform="translate(1.084 9.139)" fill="none" stroke="#1f69ff" stroke-linecap="round" stroke-width="1.5"/>
+      <line id="Line_6" data-name="Line 6" y2="5.61" transform="translate(17.523)" fill="none" stroke="#1f69ff" stroke-linecap="round" stroke-width="1.5"/>
+    </g>
+  </g>
+</svg>
