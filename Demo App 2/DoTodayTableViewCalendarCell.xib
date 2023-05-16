@@ -38,21 +38,14 @@
                             <constraint firstAttribute="bottom" secondItem="Elv-dC-NUv" secondAttribute="bottom" constant="20" id="ve7-du-T9G"/>
                         </constraints>
                     </view>
-                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3IN-pG-S83">
-                        <rect key="frame" x="0.0" y="62" width="343" height="20"/>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <constraints>
-                            <constraint firstAttribute="height" constant="20" id="2Id-6Z-igg"/>
-                        </constraints>
-                    </view>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KmK-Qo-ABI">
                         <rect key="frame" x="0.0" y="82" width="343" height="141"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="27 March, 2023" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="upr-Oy-xw4">
                                 <rect key="frame" x="18.999999999999993" y="22" width="117.33333333333331" height="18"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="18" id="2QE-y9-TYv"/>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="116" id="HjP-KL-dg5"/>
+                                    <constraint firstAttribute="height" constant="18" id="2Ox-i6-09W"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="117.33" id="bYY-KQ-ZFF"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
                                 <nil key="textColor"/>
@@ -189,7 +182,7 @@
                                     </view>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="34" id="f2D-hQ-vnI"/>
+                                    <constraint firstAttribute="height" constant="34" id="ygD-oR-MSf"/>
                                 </constraints>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="gmc-ma-RUJ">
@@ -267,18 +260,19 @@
                                     </label>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="14" id="VQc-jF-Nhz"/>
+                                    <constraint firstAttribute="height" constant="14" id="ubP-lW-B4M"/>
                                 </constraints>
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="gmc-ma-RUJ" firstAttribute="leading" secondItem="KmK-Qo-ABI" secondAttribute="leading" constant="19" id="DzM-ag-Bk2"/>
-                            <constraint firstItem="upr-Oy-xw4" firstAttribute="top" secondItem="KmK-Qo-ABI" secondAttribute="top" constant="22" id="TNP-am-q06"/>
-                            <constraint firstItem="gmc-ma-RUJ" firstAttribute="top" secondItem="fVd-jv-gTI" secondAttribute="bottom" constant="12" id="Vn5-gf-zqS"/>
-                            <constraint firstItem="fVd-jv-gTI" firstAttribute="top" secondItem="upr-Oy-xw4" secondAttribute="bottom" constant="21" id="YEm-Zx-y08"/>
-                            <constraint firstItem="upr-Oy-xw4" firstAttribute="leading" secondItem="KmK-Qo-ABI" secondAttribute="leading" constant="19" id="bN7-wZ-oUn"/>
-                            <constraint firstItem="fVd-jv-gTI" firstAttribute="leading" secondItem="KmK-Qo-ABI" secondAttribute="leading" constant="19" id="s1D-WH-oFk"/>
+                            <constraint firstItem="gmc-ma-RUJ" firstAttribute="leading" secondItem="KmK-Qo-ABI" secondAttribute="leading" constant="19" id="FTv-cR-ToT"/>
+                            <constraint firstItem="upr-Oy-xw4" firstAttribute="leading" secondItem="KmK-Qo-ABI" secondAttribute="leading" constant="19" id="LVZ-Zz-NKa"/>
+                            <constraint firstItem="fVd-jv-gTI" firstAttribute="top" secondItem="upr-Oy-xw4" secondAttribute="bottom" constant="21" id="aUl-yH-j2F"/>
+                            <constraint firstItem="fVd-jv-gTI" firstAttribute="leading" secondItem="KmK-Qo-ABI" secondAttribute="leading" constant="19" id="s8b-TL-eFe"/>
+                            <constraint firstItem="gmc-ma-RUJ" firstAttribute="top" secondItem="fVd-jv-gTI" secondAttribute="bottom" constant="12" id="u0p-Us-J3n"/>
+                            <constraint firstAttribute="bottom" secondItem="gmc-ma-RUJ" secondAttribute="bottom" constant="20" id="wvn-YA-YAO"/>
+                            <constraint firstItem="upr-Oy-xw4" firstAttribute="top" secondItem="KmK-Qo-ABI" secondAttribute="top" constant="22" id="yRR-UR-dvG"/>
                         </constraints>
                     </view>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jHA-s8-cvM">
@@ -291,16 +285,13 @@
                 </subviews>
                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 <constraints>
-                    <constraint firstItem="3IN-pG-S83" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="613-Iw-RZm"/>
                     <constraint firstItem="VmF-Tq-G5k" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="8QJ-90-FfN"/>
-                    <constraint firstAttribute="trailing" secondItem="3IN-pG-S83" secondAttribute="trailing" id="ESX-vg-NM5"/>
                     <constraint firstAttribute="bottom" secondItem="jHA-s8-cvM" secondAttribute="bottom" id="Qfc-Wr-CGV"/>
-                    <constraint firstItem="3IN-pG-S83" firstAttribute="top" secondItem="VmF-Tq-G5k" secondAttribute="bottom" id="XqH-QD-bA7"/>
-                    <constraint firstItem="KmK-Qo-ABI" firstAttribute="top" secondItem="3IN-pG-S83" secondAttribute="bottom" id="Z31-4g-Dvy"/>
-                    <constraint firstItem="KmK-Qo-ABI" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="b3o-DF-esQ"/>
+                    <constraint firstItem="KmK-Qo-ABI" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="YZl-qW-CEn"/>
+                    <constraint firstItem="KmK-Qo-ABI" firstAttribute="top" secondItem="VmF-Tq-G5k" secondAttribute="bottom" constant="20" id="Z83-vm-bNY"/>
+                    <constraint firstAttribute="trailing" secondItem="KmK-Qo-ABI" secondAttribute="trailing" id="asy-yi-Zil"/>
                     <constraint firstItem="jHA-s8-cvM" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="dZf-dF-tId"/>
-                    <constraint firstItem="jHA-s8-cvM" firstAttribute="top" secondItem="KmK-Qo-ABI" secondAttribute="bottom" id="esS-Ld-kwf"/>
-                    <constraint firstAttribute="trailing" secondItem="KmK-Qo-ABI" secondAttribute="trailing" id="iGR-vp-cIN"/>
+                    <constraint firstItem="jHA-s8-cvM" firstAttribute="top" secondItem="KmK-Qo-ABI" secondAttribute="bottom" id="ed1-gh-1wT"/>
                     <constraint firstItem="VmF-Tq-G5k" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="jdS-Bf-aia"/>
                     <constraint firstAttribute="trailing" secondItem="VmF-Tq-G5k" secondAttribute="trailing" id="quu-uI-iE3"/>
                     <constraint firstAttribute="trailing" secondItem="jHA-s8-cvM" secondAttribute="trailing" id="zFL-DP-TJJ"/>
@@ -311,13 +302,13 @@
             <connections>
                 <outlet property="bodyView" destination="KmK-Qo-ABI" id="4om-7O-fXd"/>
                 <outlet property="headingView" destination="VmF-Tq-G5k" id="ssR-ii-yUX"/>
-                <outlet property="weekDay1View" destination="f4h-kl-PF4" id="0OI-te-vcY"/>
-                <outlet property="weekDay2View" destination="gf8-zY-fET" id="pLZ-H2-n7K"/>
-                <outlet property="weekDay3View" destination="p1C-0R-AQn" id="wmg-cC-u6i"/>
-                <outlet property="weekDay4View" destination="znI-PG-7R3" id="6c3-ZL-CiH"/>
-                <outlet property="weekDay5View" destination="Ylg-lE-LpL" id="e89-J5-FGU"/>
-                <outlet property="weekDay6View" destination="pFu-e6-qw8" id="0xa-qr-lcC"/>
-                <outlet property="weekDay7View" destination="9HV-pB-5zY" id="6Ug-4L-A91"/>
+                <outletCollection property="weekDayViews" destination="f4h-kl-PF4" collectionClass="NSMutableArray" id="x4w-lW-AeK"/>
+                <outletCollection property="weekDayViews" destination="gf8-zY-fET" collectionClass="NSMutableArray" id="uVu-Jy-COH"/>
+                <outletCollection property="weekDayViews" destination="p1C-0R-AQn" collectionClass="NSMutableArray" id="wdO-Y7-bEh"/>
+                <outletCollection property="weekDayViews" destination="znI-PG-7R3" collectionClass="NSMutableArray" id="Bsf-gY-Da7"/>
+                <outletCollection property="weekDayViews" destination="Ylg-lE-LpL" collectionClass="NSMutableArray" id="uUx-aJ-44C"/>
+                <outletCollection property="weekDayViews" destination="pFu-e6-qw8" collectionClass="NSMutableArray" id="7LI-LF-sJP"/>
+                <outletCollection property="weekDayViews" destination="9HV-pB-5zY" collectionClass="NSMutableArray" id="rE7-cp-rHI"/>
             </connections>
             <point key="canvasLocation" x="128.46153846153845" y="20.971563981042653"/>
         </tableViewCell>

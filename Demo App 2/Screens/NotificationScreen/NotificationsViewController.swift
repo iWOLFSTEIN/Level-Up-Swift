@@ -1,10 +1,3 @@
-//
-//  NotificationsViewController.swift
-//  Demo App 2
-//
-//  Created by BrainX Technologies on 12/05/2023.
-//
-
 import UIKit
 
 class NotificationsViewController: UIViewController {
@@ -14,7 +7,6 @@ class NotificationsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
         let notificationTableViewCellNib = UINib(nibName: NotificationTableViewCell.nibName, bundle: nil)
         tableView.register(notificationTableViewCellNib, forCellReuseIdentifier: NotificationTableViewCell.reusableCellIdentifier)
         tableView.delegate = self

@@ -14,8 +14,6 @@ class NotificationTableViewCell: UITableViewCell {
 
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
-        
         self.contentView.layer.cornerRadius = 12
         
         dotSeparaterView.layer.cornerRadius = 2
@@ -27,11 +25,3 @@ class NotificationTableViewCell: UITableViewCell {
     }
 }
 
-extension NotificationTableViewCell {
-    static var nibName: String {
-        return String(describing: self)
-    }
-    static var reusableCellIdentifier: String {
-        return String(describing: self)
-    }
-}

@@ -9,6 +9,15 @@
 /* Begin PBXBuildFile section */
 		1213DF432A136399000E2FB0 /* DoTodayTableViewCalendarCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1213DF412A136399000E2FB0 /* DoTodayTableViewCalendarCell.swift */; };
 		1213DF442A136399000E2FB0 /* DoTodayTableViewCalendarCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1213DF422A136399000E2FB0 /* DoTodayTableViewCalendarCell.xib */; };
+		1213DF482A139696000E2FB0 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1213DF472A139696000E2FB0 /* ProfileViewController.swift */; };
+		1213DF4A2A1396C8000E2FB0 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1213DF492A1396C8000E2FB0 /* ProfileView.swift */; };
+		1213DF4E2A139756000E2FB0 /* HomeTile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1213DF4D2A139756000E2FB0 /* HomeTile.swift */; };
+		1213DF502A139768000E2FB0 /* HomeTile.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1213DF4F2A139768000E2FB0 /* HomeTile.xib */; };
+		1213DF522A13A570000E2FB0 /* UITableViewConfigurations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1213DF512A13A570000E2FB0 /* UITableViewConfigurations.swift */; };
+		1213DF582A13B400000E2FB0 /* DoTodayTableViewBasicTasksCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1213DF562A13B400000E2FB0 /* DoTodayTableViewBasicTasksCell.swift */; };
+		1213DF592A13B400000E2FB0 /* DoTodayTableViewBasicTasksCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1213DF572A13B400000E2FB0 /* DoTodayTableViewBasicTasksCell.xib */; };
+		1213DF5B2A13B585000E2FB0 /* BasicTaskTile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1213DF5A2A13B585000E2FB0 /* BasicTaskTile.swift */; };
+		1213DF5D2A13B599000E2FB0 /* BasicTaskTile.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1213DF5C2A13B599000E2FB0 /* BasicTaskTile.xib */; };
 		122640CC2A0B836F004D11B3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 122640CB2A0B836F004D11B3 /* AppDelegate.swift */; };
 		122640CE2A0B836F004D11B3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 122640CD2A0B836F004D11B3 /* SceneDelegate.swift */; };
 		122640D02A0B836F004D11B3 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 122640CF2A0B836F004D11B3 /* LoginViewController.swift */; };
@@ -28,6 +37,15 @@
 /* Begin PBXFileReference section */
 		1213DF412A136399000E2FB0 /* DoTodayTableViewCalendarCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoTodayTableViewCalendarCell.swift; sourceTree = "<group>"; };
 		1213DF422A136399000E2FB0 /* DoTodayTableViewCalendarCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DoTodayTableViewCalendarCell.xib; sourceTree = "<group>"; };
+		1213DF472A139696000E2FB0 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		1213DF492A1396C8000E2FB0 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		1213DF4D2A139756000E2FB0 /* HomeTile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTile.swift; sourceTree = "<group>"; };
+		1213DF4F2A139768000E2FB0 /* HomeTile.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeTile.xib; sourceTree = "<group>"; };
+		1213DF512A13A570000E2FB0 /* UITableViewConfigurations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableViewConfigurations.swift; sourceTree = "<group>"; };
+		1213DF562A13B400000E2FB0 /* DoTodayTableViewBasicTasksCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoTodayTableViewBasicTasksCell.swift; sourceTree = "<group>"; };
+		1213DF572A13B400000E2FB0 /* DoTodayTableViewBasicTasksCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DoTodayTableViewBasicTasksCell.xib; sourceTree = "<group>"; };
+		1213DF5A2A13B585000E2FB0 /* BasicTaskTile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicTaskTile.swift; sourceTree = "<group>"; };
+		1213DF5C2A13B599000E2FB0 /* BasicTaskTile.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BasicTaskTile.xib; sourceTree = "<group>"; };
 		122640C82A0B836F004D11B3 /* Demo App 2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Demo App 2.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		122640CB2A0B836F004D11B3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		122640CD2A0B836F004D11B3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -70,6 +88,58 @@
 			path = NotificationScreen;
 			sourceTree = "<group>";
 		};
+		1213DF452A139621000E2FB0 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				1213DF462A13963C000E2FB0 /* Home */,
+				1213DF3A2A126CEB000E2FB0 /* NotificationScreen */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		1213DF462A13963C000E2FB0 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				122640ED2A0D254E004D11B3 /* HomeViewController.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		1213DF4B2A13973D000E2FB0 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				1213DF4C2A139748000E2FB0 /* HomeTile */,
+				1213DF5E2A13B5A4000E2FB0 /* BasicTaskTile */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		1213DF4C2A139748000E2FB0 /* HomeTile */ = {
+			isa = PBXGroup;
+			children = (
+				1213DF4D2A139756000E2FB0 /* HomeTile.swift */,
+				1213DF4F2A139768000E2FB0 /* HomeTile.xib */,
+			);
+			path = HomeTile;
+			sourceTree = "<group>";
+		};
+		1213DF552A13B3C3000E2FB0 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				122640F52A123415004D11B3 /* SettingsViewController.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		1213DF5E2A13B5A4000E2FB0 /* BasicTaskTile */ = {
+			isa = PBXGroup;
+			children = (
+				1213DF5A2A13B585000E2FB0 /* BasicTaskTile.swift */,
+				1213DF5C2A13B599000E2FB0 /* BasicTaskTile.xib */,
+			);
+			path = BasicTaskTile;
+			sourceTree = "<group>";
+		};
 		122640BF2A0B836F004D11B3 = {
 			isa = PBXGroup;
 			children = (
@@ -91,6 +161,8 @@
 		122640CA2A0B836F004D11B3 /* Demo App 2 */ = {
 			isa = PBXGroup;
 			children = (
+				1213DF4B2A13973D000E2FB0 /* Components */,
+				1213DF452A139621000E2FB0 /* Screens */,
 				122640CB2A0B836F004D11B3 /* AppDelegate.swift */,
 				122640CD2A0B836F004D11B3 /* SceneDelegate.swift */,
 				122640CF2A0B836F004D11B3 /* LoginViewController.swift */,
@@ -99,12 +171,15 @@
 				122640D62A0B8370004D11B3 /* LaunchScreen.storyboard */,
 				122640D92A0B8370004D11B3 /* Info.plist */,
 				122640EB2A0D2246004D11B3 /* TabBarViewController.swift */,
-				122640ED2A0D254E004D11B3 /* HomeViewController.swift */,
-				1213DF3A2A126CEB000E2FB0 /* NotificationScreen */,
-				122640F52A123415004D11B3 /* SettingsViewController.swift */,
+				1213DF552A13B3C3000E2FB0 /* Settings */,
 				12CDAD442A12531800CA9A86 /* DoTodayViewController.swift */,
 				1213DF412A136399000E2FB0 /* DoTodayTableViewCalendarCell.swift */,
 				1213DF422A136399000E2FB0 /* DoTodayTableViewCalendarCell.xib */,
+				1213DF472A139696000E2FB0 /* ProfileViewController.swift */,
+				1213DF492A1396C8000E2FB0 /* ProfileView.swift */,
+				1213DF512A13A570000E2FB0 /* UITableViewConfigurations.swift */,
+				1213DF562A13B400000E2FB0 /* DoTodayTableViewBasicTasksCell.swift */,
+				1213DF572A13B400000E2FB0 /* DoTodayTableViewBasicTasksCell.xib */,
 			);
 			path = "Demo App 2";
 			sourceTree = "<group>";
@@ -188,9 +263,12 @@
 			files = (
 				122640F42A0E6C45004D11B3 /* NotificationTableViewCell.xib in Resources */,
 				1213DF442A136399000E2FB0 /* DoTodayTableViewCalendarCell.xib in Resources */,
+				1213DF502A139768000E2FB0 /* HomeTile.xib in Resources */,
 				122640D82A0B8370004D11B3 /* LaunchScreen.storyboard in Resources */,
 				122640D52A0B8370004D11B3 /* Assets.xcassets in Resources */,
+				1213DF5D2A13B599000E2FB0 /* BasicTaskTile.xib in Resources */,
 				122640D32A0B836F004D11B3 /* Main.storyboard in Resources */,
+				1213DF592A13B400000E2FB0 /* DoTodayTableViewBasicTasksCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -244,13 +322,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				122640D02A0B836F004D11B3 /* LoginViewController.swift in Sources */,
+				1213DF5B2A13B585000E2FB0 /* BasicTaskTile.swift in Sources */,
 				12CDAD452A12531800CA9A86 /* DoTodayViewController.swift in Sources */,
 				122640CC2A0B836F004D11B3 /* AppDelegate.swift in Sources */,
 				122640CE2A0B836F004D11B3 /* SceneDelegate.swift in Sources */,
+				1213DF4A2A1396C8000E2FB0 /* ProfileView.swift in Sources */,
+				1213DF582A13B400000E2FB0 /* DoTodayTableViewBasicTasksCell.swift in Sources */,
 				122640EC2A0D2246004D11B3 /* TabBarViewController.swift in Sources */,
+				1213DF522A13A570000E2FB0 /* UITableViewConfigurations.swift in Sources */,
 				122640F32A0E6C45004D11B3 /* NotificationTableViewCell.swift in Sources */,
+				1213DF482A139696000E2FB0 /* ProfileViewController.swift in Sources */,
 				1213DF432A136399000E2FB0 /* DoTodayTableViewCalendarCell.swift in Sources */,
 				122640F02A0E697C004D11B3 /* NotificationsViewController.swift in Sources */,
+				1213DF4E2A139756000E2FB0 /* HomeTile.swift in Sources */,
 				122640EE2A0D254E004D11B3 /* HomeViewController.swift in Sources */,
 				122640F62A123415004D11B3 /* SettingsViewController.swift in Sources */,
 			);

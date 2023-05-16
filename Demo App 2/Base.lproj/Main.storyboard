@@ -558,10 +558,10 @@
                                         </constraints>
                                     </imageView>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="calender" translatesAutoresizingMaskIntoConstraints="NO" id="4p6-ZD-tv4">
-                                        <rect key="frame" x="340" y="93.666666666666671" width="34" height="34"/>
+                                        <rect key="frame" x="340" y="94" width="34" height="34"/>
                                     </imageView>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="calender 1" translatesAutoresizingMaskIntoConstraints="NO" id="ADy-Uf-yo8">
-                                        <rect key="frame" x="296" y="93.666666666666671" width="34" height="34"/>
+                                        <rect key="frame" x="296" y="94" width="34" height="34"/>
                                     </imageView>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -1100,6 +1100,41 @@
             </objects>
             <point key="canvasLocation" x="3624.6153846153843" y="727.96208530805688"/>
         </scene>
+        <!--Profile View Controller-->
+        <scene sceneID="4aP-zD-Cll">
+            <objects>
+                <viewController id="alu-Al-lZ4" customClass="ProfileViewController" customModule="Demo_App_2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ngf-gu-nEe" customClass="ProfileView" customModule="Demo_App_2" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HLF-g7-PYT" customClass="HomeTile" customModule="Demo_App_2" customModuleProvider="target">
+                                <rect key="frame" x="75" y="358" width="240" height="128"/>
+                                <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="Uus-UT-2s2"/>
+                                    <constraint firstAttribute="height" constant="128" id="fe6-9Y-hHp"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="5Ef-4o-Hzd"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="HLF-g7-PYT" firstAttribute="centerY" secondItem="Ngf-gu-nEe" secondAttribute="centerY" id="8bF-rf-Yg0"/>
+                            <constraint firstItem="HLF-g7-PYT" firstAttribute="centerX" secondItem="Ngf-gu-nEe" secondAttribute="centerX" id="xIO-Sd-Puo"/>
+                        </constraints>
+                        <connections>
+                            <outlet property="mytile" destination="HLF-g7-PYT" id="4R4-Ou-2ez"/>
+                        </connections>
+                    </view>
+                    <connections>
+                        <outlet property="contentView" destination="Ngf-gu-nEe" id="gZa-uk-ArG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9ar-IE-XXM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3625" y="1505"/>
+        </scene>
     </scenes>
     <resources>
         <image name="Activities &amp; Tips" width="48" height="48"/>
@@ -1128,6 +1163,9 @@
         <image name="left-arrow" width="170.66667175292969" height="170.66667175292969"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

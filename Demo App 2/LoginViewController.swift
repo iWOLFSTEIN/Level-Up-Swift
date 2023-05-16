@@ -45,12 +45,8 @@ class LoginViewController: UIViewController {
         let currentFont = loginButton.titleLabel?.font
         let boldFont = UIFont.boldSystemFont(ofSize: currentFont?.pointSize ?? 16)
         loginButton.titleLabel?.font = boldFont
-        
-    }
-    
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
         navigationController?.navigationBar.isHidden = true
+        
     }
     
     @IBAction func login( _ sender: UIButton) {
@@ -62,5 +58,8 @@ class LoginViewController: UIViewController {
     @objc func togglePasswordVisibility() {
         passwordTextField.isSecureTextEntry.toggle()
     }
+    
 }
+
+
 
