@@ -20,8 +20,8 @@ class DoTodayTableViewCalendarCell: UITableViewCell {
         super.setSelected(selected, animated: animated)
 
         // Configure the view for the selected state
-        headingView.layer.cornerRadius = 6
-        bodyView.layer.cornerRadius = 6
+        headingView.layer.cornerRadius = 12
+        bodyView.layer.cornerRadius = 12
     }
     
 }
