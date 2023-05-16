@@ -9,6 +9,13 @@ import UIKit
 
 class DoTodayTableViewCalendarCell: UITableViewCell {
 
+    @IBOutlet weak var weekDay7View: UIView!
+    @IBOutlet weak var weekDay6View: UIView!
+    @IBOutlet weak var weekDay5View: UIView!
+    @IBOutlet weak var weekDay4View: UIView!
+    @IBOutlet weak var weekDay3View: UIView!
+    @IBOutlet weak var weekDay2View: UIView!
+    @IBOutlet weak var weekDay1View: UIView!
     @IBOutlet weak var bodyView: UIView!
     @IBOutlet weak var headingView: UIView!
     override func awakeFromNib() {
@@ -20,8 +27,16 @@ class DoTodayTableViewCalendarCell: UITableViewCell {
         super.setSelected(selected, animated: animated)
 
         // Configure the view for the selected state
-        headingView.layer.cornerRadius = 12
-        bodyView.layer.cornerRadius = 12
+        headingView.layer.cornerRadius = 10
+        bodyView.layer.cornerRadius = 10
+        
+        weekDay1View.layer.cornerRadius = 17
+        weekDay2View.layer.cornerRadius = 17
+        weekDay3View.layer.cornerRadius = 17
+        weekDay4View.layer.cornerRadius = 17
+        weekDay5View.layer.cornerRadius = 17
+        weekDay6View.layer.cornerRadius = 17
+        weekDay7View.layer.cornerRadius = 17
     }
     
 }
