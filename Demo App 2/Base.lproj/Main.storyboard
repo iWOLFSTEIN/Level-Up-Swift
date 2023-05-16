@@ -527,7 +527,19 @@
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ULT-xw-Q34">
                                 <rect key="frame" x="0.0" y="140" width="390" height="670"/>
+                                <subviews>
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="tEL-9b-BRe">
+                                        <rect key="frame" x="16" y="0.0" width="358" height="670"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </tableView>
+                                </subviews>
                                 <color key="backgroundColor" red="0.93725490196078431" green="0.94901960784313721" blue="0.98039215686274506" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="tEL-9b-BRe" firstAttribute="top" secondItem="ULT-xw-Q34" secondAttribute="top" id="8zi-Xa-uZh"/>
+                                    <constraint firstItem="tEL-9b-BRe" firstAttribute="leading" secondItem="ULT-xw-Q34" secondAttribute="leading" constant="16" id="hVf-XD-BxS"/>
+                                    <constraint firstAttribute="trailing" secondItem="tEL-9b-BRe" secondAttribute="trailing" constant="16" id="jE9-w0-J6w"/>
+                                    <constraint firstAttribute="bottom" secondItem="tEL-9b-BRe" secondAttribute="bottom" id="jbS-mc-VOm"/>
+                                </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2Ni-9d-nNc">
                                 <rect key="frame" x="0.0" y="0.0" width="390" height="140"/>
@@ -580,6 +592,7 @@
                     </view>
                     <connections>
                         <outlet property="backButtonView" destination="4c5-iG-D4R" id="3nd-ap-G6B"/>
+                        <outlet property="tableView" destination="tEL-9b-BRe" id="Efn-6b-xva"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YYS-Da-95o" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
