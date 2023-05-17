@@ -18,6 +18,7 @@
 		1213DF5D2A13B599000E2FB0 /* TaskTile.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1213DF5C2A13B599000E2FB0 /* TaskTile.xib */; };
 		1213DF612A14BF4A000E2FB0 /* DoTodayTableViewExtraTaskCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1213DF5F2A14BF4A000E2FB0 /* DoTodayTableViewExtraTaskCell.swift */; };
 		1213DF622A14BF4A000E2FB0 /* DoTodayTableViewExtraTaskCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1213DF602A14BF4A000E2FB0 /* DoTodayTableViewExtraTaskCell.xib */; };
+		1213DF672A14FE51000E2FB0 /* TrackItViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1213DF662A14FE51000E2FB0 /* TrackItViewController.swift */; };
 		122640CC2A0B836F004D11B3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 122640CB2A0B836F004D11B3 /* AppDelegate.swift */; };
 		122640CE2A0B836F004D11B3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 122640CD2A0B836F004D11B3 /* SceneDelegate.swift */; };
 		122640D02A0B836F004D11B3 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 122640CF2A0B836F004D11B3 /* LoginViewController.swift */; };
@@ -46,6 +47,7 @@
 		1213DF5C2A13B599000E2FB0 /* TaskTile.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TaskTile.xib; sourceTree = "<group>"; };
 		1213DF5F2A14BF4A000E2FB0 /* DoTodayTableViewExtraTaskCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoTodayTableViewExtraTaskCell.swift; sourceTree = "<group>"; };
 		1213DF602A14BF4A000E2FB0 /* DoTodayTableViewExtraTaskCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DoTodayTableViewExtraTaskCell.xib; sourceTree = "<group>"; };
+		1213DF662A14FE51000E2FB0 /* TrackItViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackItViewController.swift; sourceTree = "<group>"; };
 		122640C82A0B836F004D11B3 /* Demo App 2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Demo App 2.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		122640CB2A0B836F004D11B3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		122640CD2A0B836F004D11B3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -196,6 +198,7 @@
 				1213DF472A139696000E2FB0 /* ProfileViewController.swift */,
 				1213DF492A1396C8000E2FB0 /* ProfileView.swift */,
 				1213DF512A13A570000E2FB0 /* UIConfigurations.swift */,
+				1213DF662A14FE51000E2FB0 /* TrackItViewController.swift */,
 			);
 			path = "Demo App 2";
 			sourceTree = "<group>";
@@ -337,6 +340,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1213DF672A14FE51000E2FB0 /* TrackItViewController.swift in Sources */,
 				122640D02A0B836F004D11B3 /* LoginViewController.swift in Sources */,
 				1213DF5B2A13B585000E2FB0 /* TaskTile.swift in Sources */,
 				12CDAD452A12531800CA9A86 /* DoTodayViewController.swift in Sources */,
