@@ -2,6 +2,7 @@ import UIKit
 
 class BasicTaskTile: UIView {
     
+    @IBOutlet weak var stylingView: UIView!
     @IBOutlet weak var checkBoxImageView: UIImageView!
     @IBOutlet weak var title: UILabel!
 

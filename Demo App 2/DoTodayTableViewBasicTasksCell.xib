@@ -41,7 +41,7 @@
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
-                <outlet property="basicTaskTileContainerView" destination="DgJ-2M-F4m" id="9e8-ys-UGa"/>
+                <outlet property="titleLabel" destination="RwM-8r-lhu" id="qXj-4a-5mm"/>
             </connections>
             <point key="canvasLocation" x="128.46153846153845" y="20.616113744075829"/>
         </tableViewCell>

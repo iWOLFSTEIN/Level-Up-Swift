@@ -11,6 +11,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BasicTaskTile" customModule="Demo_App_2" customModuleProvider="target">
             <connections>
                 <outlet property="checkBoxImageView" destination="KgO-a2-esg" id="P8o-mV-K4V"/>
+                <outlet property="stylingView" destination="RLv-3H-mYT" id="R4H-Qz-HsD"/>
                 <outlet property="title" destination="tBk-6o-Qtb" id="TDj-A7-VD5"/>
             </connections>
         </placeholder>
