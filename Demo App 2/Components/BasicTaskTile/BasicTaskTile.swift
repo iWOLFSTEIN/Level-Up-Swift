@@ -32,7 +32,6 @@ class BasicTaskTile: UIView {
             contentView.bottomAnchor.constraint(equalTo: bottomAnchor)
         ])
     }
-
 }
 
 extension BasicTaskTile {
