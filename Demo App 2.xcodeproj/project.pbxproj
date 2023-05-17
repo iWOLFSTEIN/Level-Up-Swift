@@ -14,8 +14,8 @@
 		1213DF522A13A570000E2FB0 /* UIConfigurations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1213DF512A13A570000E2FB0 /* UIConfigurations.swift */; };
 		1213DF582A13B400000E2FB0 /* DoTodayTableViewBasicTasksCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1213DF562A13B400000E2FB0 /* DoTodayTableViewBasicTasksCell.swift */; };
 		1213DF592A13B400000E2FB0 /* DoTodayTableViewBasicTasksCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1213DF572A13B400000E2FB0 /* DoTodayTableViewBasicTasksCell.xib */; };
-		1213DF5B2A13B585000E2FB0 /* BasicTaskTile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1213DF5A2A13B585000E2FB0 /* BasicTaskTile.swift */; };
-		1213DF5D2A13B599000E2FB0 /* BasicTaskTile.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1213DF5C2A13B599000E2FB0 /* BasicTaskTile.xib */; };
+		1213DF5B2A13B585000E2FB0 /* TaskTile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1213DF5A2A13B585000E2FB0 /* TaskTile.swift */; };
+		1213DF5D2A13B599000E2FB0 /* TaskTile.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1213DF5C2A13B599000E2FB0 /* TaskTile.xib */; };
 		1213DF612A14BF4A000E2FB0 /* DoTodayTableViewExtraTaskCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1213DF5F2A14BF4A000E2FB0 /* DoTodayTableViewExtraTaskCell.swift */; };
 		1213DF622A14BF4A000E2FB0 /* DoTodayTableViewExtraTaskCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1213DF602A14BF4A000E2FB0 /* DoTodayTableViewExtraTaskCell.xib */; };
 		122640CC2A0B836F004D11B3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 122640CB2A0B836F004D11B3 /* AppDelegate.swift */; };
@@ -42,8 +42,8 @@
 		1213DF512A13A570000E2FB0 /* UIConfigurations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIConfigurations.swift; sourceTree = "<group>"; };
 		1213DF562A13B400000E2FB0 /* DoTodayTableViewBasicTasksCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoTodayTableViewBasicTasksCell.swift; sourceTree = "<group>"; };
 		1213DF572A13B400000E2FB0 /* DoTodayTableViewBasicTasksCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DoTodayTableViewBasicTasksCell.xib; sourceTree = "<group>"; };
-		1213DF5A2A13B585000E2FB0 /* BasicTaskTile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicTaskTile.swift; sourceTree = "<group>"; };
-		1213DF5C2A13B599000E2FB0 /* BasicTaskTile.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BasicTaskTile.xib; sourceTree = "<group>"; };
+		1213DF5A2A13B585000E2FB0 /* TaskTile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskTile.swift; sourceTree = "<group>"; };
+		1213DF5C2A13B599000E2FB0 /* TaskTile.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TaskTile.xib; sourceTree = "<group>"; };
 		1213DF5F2A14BF4A000E2FB0 /* DoTodayTableViewExtraTaskCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoTodayTableViewExtraTaskCell.swift; sourceTree = "<group>"; };
 		1213DF602A14BF4A000E2FB0 /* DoTodayTableViewExtraTaskCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DoTodayTableViewExtraTaskCell.xib; sourceTree = "<group>"; };
 		122640C82A0B836F004D11B3 /* Demo App 2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Demo App 2.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -109,7 +109,7 @@
 		1213DF4B2A13973D000E2FB0 /* Components */ = {
 			isa = PBXGroup;
 			children = (
-				1213DF5E2A13B5A4000E2FB0 /* BasicTaskTile */,
+				1213DF5E2A13B5A4000E2FB0 /* TaskTile */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -122,13 +122,13 @@
 			path = Settings;
 			sourceTree = "<group>";
 		};
-		1213DF5E2A13B5A4000E2FB0 /* BasicTaskTile */ = {
+		1213DF5E2A13B5A4000E2FB0 /* TaskTile */ = {
 			isa = PBXGroup;
 			children = (
-				1213DF5A2A13B585000E2FB0 /* BasicTaskTile.swift */,
-				1213DF5C2A13B599000E2FB0 /* BasicTaskTile.xib */,
+				1213DF5A2A13B585000E2FB0 /* TaskTile.swift */,
+				1213DF5C2A13B599000E2FB0 /* TaskTile.xib */,
 			);
-			path = BasicTaskTile;
+			path = TaskTile;
 			sourceTree = "<group>";
 		};
 		1213DF632A14EF0E000E2FB0 /* DoTodayTableViewCells */ = {
@@ -282,7 +282,7 @@
 				1213DF442A136399000E2FB0 /* DoTodayTableViewCalendarCell.xib in Resources */,
 				122640D82A0B8370004D11B3 /* LaunchScreen.storyboard in Resources */,
 				122640D52A0B8370004D11B3 /* Assets.xcassets in Resources */,
-				1213DF5D2A13B599000E2FB0 /* BasicTaskTile.xib in Resources */,
+				1213DF5D2A13B599000E2FB0 /* TaskTile.xib in Resources */,
 				122640D32A0B836F004D11B3 /* Main.storyboard in Resources */,
 				1213DF592A13B400000E2FB0 /* DoTodayTableViewBasicTasksCell.xib in Resources */,
 			);
@@ -338,7 +338,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				122640D02A0B836F004D11B3 /* LoginViewController.swift in Sources */,
-				1213DF5B2A13B585000E2FB0 /* BasicTaskTile.swift in Sources */,
+				1213DF5B2A13B585000E2FB0 /* TaskTile.swift in Sources */,
 				12CDAD452A12531800CA9A86 /* DoTodayViewController.swift in Sources */,
 				122640CC2A0B836F004D11B3 /* AppDelegate.swift in Sources */,
 				122640CE2A0B836F004D11B3 /* SceneDelegate.swift in Sources */,

@@ -20,7 +20,7 @@ class DoTodayTableViewExtraTaskCell: UITableViewCell {
         self.contentView.addSubview(parentUIView)
         
         for index in 0..<basicTaskTileCount {
-            let basicTaskTile = BasicTaskTile()
+            let basicTaskTile = TaskTile()
             if index % 2 == 0 {
                 basicTaskTile.stylingView.applyGradient(colors: ["stylingTaskTilesBlue", "stylingTaskTilesLightBlue"], startPoint: CGPoint(x: 0.5, y: 0), endPoint: CGPoint(x: 0.5, y: 1))
             }
@@ -41,7 +41,7 @@ class DoTodayTableViewExtraTaskCell: UITableViewCell {
                     basicTaskTile.trailingAnchor.constraint(equalTo: parentUIView.trailingAnchor)
                 ])
             } else {
-                let previousBasicTaskTile = parentUIView.subviews[index - 1] as! BasicTaskTile
+                let previousBasicTaskTile = parentUIView.subviews[index - 1] as! TaskTile
                 
                 NSLayoutConstraint.activate([
                     basicTaskTile.topAnchor.constraint(equalTo: previousBasicTaskTile.bottomAnchor, constant: 10),

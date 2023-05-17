@@ -1,6 +1,6 @@
 import UIKit
 
-class BasicTaskTile: UIView {
+class TaskTile: UIView {
     
     @IBOutlet weak var stylingView: UIView!
     @IBOutlet weak var checkBoxImageView: UIImageView!
@@ -34,7 +34,7 @@ class BasicTaskTile: UIView {
     }
 }
 
-extension BasicTaskTile {
+extension TaskTile {
     static var nibName: String {
         return String(describing: self)
     }
