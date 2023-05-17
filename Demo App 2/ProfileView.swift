@@ -10,14 +10,14 @@ import UIKit
 class ProfileView: UIView {
 
 
-    @IBOutlet weak var mytile: HomeTile!
+//    @IBOutlet weak var mytile: HomeTile!
     @IBOutlet weak var titleLabel: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()
         
         titleLabel.font = .systemFont(ofSize: 17)
-        mytile.label 
+//        mytile.label 
     }
     
 }

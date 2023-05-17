@@ -1,10 +1,3 @@
-//
-//  BasicTaskTile.swift
-//  Demo App 2
-//
-//  Created by BrainX Technologies on 16/05/2023.
-//
-
 import UIKit
 
 class BasicTaskTile: UIView {
@@ -14,20 +7,20 @@ class BasicTaskTile: UIView {
 
     override init(frame: CGRect) {
         super.init(frame: frame)
+        commonInit()
     }
     
     required init?(coder: NSCoder) {
         super.init(coder: coder)
+        commonInit()
     }
     
     private func commonInit() {
-        // Load the view from the nib file
         let nib = UINib(nibName: String(describing: Self.self), bundle: nil)
         guard let contentView = nib.instantiate(withOwner: self, options: nil).first as? UIView else {
             fatalError("Could not load BasicTaskTile from nib")
         }
         
-        // Add the loaded view as a subview and set its constraints
         contentView.translatesAutoresizingMaskIntoConstraints = false
         addSubview(contentView)
         
@@ -39,4 +32,10 @@ class BasicTaskTile: UIView {
         ])
     }
 
+}
+
+extension BasicTaskTile {
+    static var nibName: String {
+        return String(describing: self)
+    }
 }

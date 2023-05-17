@@ -23,20 +23,25 @@
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NQW-fr-bJR" customClass="BasicTaskTile" customModule="Demo_App_2" customModuleProvider="target">
-                        <rect key="frame" x="0.0" y="27" width="343" height="66"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DgJ-2M-F4m" customClass="BasicTaskTile" customModule="Demo_App_2" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="29.333333333333329" width="343" height="66"/>
                         <color key="backgroundColor" systemColor="systemCyanColor"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="66" id="GnR-EG-IDN"/>
+                        </constraints>
                     </view>
                 </subviews>
                 <constraints>
                     <constraint firstItem="RwM-8r-lhu" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="2cE-5a-YWM"/>
+                    <constraint firstAttribute="trailing" secondItem="DgJ-2M-F4m" secondAttribute="trailing" id="fMf-zP-ShI"/>
+                    <constraint firstItem="DgJ-2M-F4m" firstAttribute="top" secondItem="RwM-8r-lhu" secondAttribute="bottom" constant="10" id="mMt-pf-wKq"/>
                     <constraint firstItem="RwM-8r-lhu" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="mOD-63-1Av"/>
+                    <constraint firstItem="DgJ-2M-F4m" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="r3d-ny-ZlN"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
-                <outlet property="taskTile" destination="NQW-fr-bJR" id="QxX-C4-qgQ"/>
+                <outlet property="basicTaskTileContainerView" destination="DgJ-2M-F4m" id="9e8-ys-UGa"/>
             </connections>
             <point key="canvasLocation" x="128.46153846153845" y="20.616113744075829"/>
         </tableViewCell>

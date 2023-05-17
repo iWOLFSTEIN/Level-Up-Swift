@@ -10,8 +10,8 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BasicTaskTile" customModule="Demo_App_2" customModuleProvider="target">
             <connections>
-                <outlet property="checkBoxImageView" destination="KgO-a2-esg" id="5Y9-tO-3gZ"/>
-                <outlet property="title" destination="tBk-6o-Qtb" id="n6n-jX-Bqf"/>
+                <outlet property="checkBoxImageView" destination="KgO-a2-esg" id="P8o-mV-K4V"/>
+                <outlet property="title" destination="tBk-6o-Qtb" id="TDj-A7-VD5"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>

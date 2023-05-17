@@ -9,18 +9,15 @@ import UIKit
 
 class DoTodayTableViewBasicTasksCell: UITableViewCell {
     
-    @IBOutlet weak var taskTile: BasicTaskTile!
+    @IBOutlet private weak var basicTaskTileContainerView: BasicTaskTile!
 
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
-        self.addSubview(taskTile)
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
 
-        // Configure the view for the selected state
     }
     
 }
