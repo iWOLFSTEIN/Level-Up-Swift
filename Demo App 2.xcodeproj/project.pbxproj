@@ -19,6 +19,8 @@
 		1213DF612A14BF4A000E2FB0 /* DoTodayTableViewExtraTaskCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1213DF5F2A14BF4A000E2FB0 /* DoTodayTableViewExtraTaskCell.swift */; };
 		1213DF622A14BF4A000E2FB0 /* DoTodayTableViewExtraTaskCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1213DF602A14BF4A000E2FB0 /* DoTodayTableViewExtraTaskCell.xib */; };
 		1213DF672A14FE51000E2FB0 /* TrackItViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1213DF662A14FE51000E2FB0 /* TrackItViewController.swift */; };
+		1213DF692A1509E3000E2FB0 /* TrackItContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1213DF682A1509E3000E2FB0 /* TrackItContainer.swift */; };
+		1213DF6B2A150AA9000E2FB0 /* TrackItContainer.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1213DF6A2A150AA9000E2FB0 /* TrackItContainer.xib */; };
 		122640CC2A0B836F004D11B3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 122640CB2A0B836F004D11B3 /* AppDelegate.swift */; };
 		122640CE2A0B836F004D11B3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 122640CD2A0B836F004D11B3 /* SceneDelegate.swift */; };
 		122640D02A0B836F004D11B3 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 122640CF2A0B836F004D11B3 /* LoginViewController.swift */; };
@@ -48,6 +50,8 @@
 		1213DF5F2A14BF4A000E2FB0 /* DoTodayTableViewExtraTaskCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoTodayTableViewExtraTaskCell.swift; sourceTree = "<group>"; };
 		1213DF602A14BF4A000E2FB0 /* DoTodayTableViewExtraTaskCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DoTodayTableViewExtraTaskCell.xib; sourceTree = "<group>"; };
 		1213DF662A14FE51000E2FB0 /* TrackItViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackItViewController.swift; sourceTree = "<group>"; };
+		1213DF682A1509E3000E2FB0 /* TrackItContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackItContainer.swift; sourceTree = "<group>"; };
+		1213DF6A2A150AA9000E2FB0 /* TrackItContainer.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TrackItContainer.xib; sourceTree = "<group>"; };
 		122640C82A0B836F004D11B3 /* Demo App 2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Demo App 2.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		122640CB2A0B836F004D11B3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		122640CD2A0B836F004D11B3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -112,6 +116,7 @@
 			isa = PBXGroup;
 			children = (
 				1213DF5E2A13B5A4000E2FB0 /* TaskTile */,
+				1213DF6C2A150AE4000E2FB0 /* TrackItContainer */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -161,6 +166,15 @@
 				1213DF642A14EF28000E2FB0 /* DoTodayTableViewCellNibs */,
 			);
 			path = DoToday;
+			sourceTree = "<group>";
+		};
+		1213DF6C2A150AE4000E2FB0 /* TrackItContainer */ = {
+			isa = PBXGroup;
+			children = (
+				1213DF682A1509E3000E2FB0 /* TrackItContainer.swift */,
+				1213DF6A2A150AA9000E2FB0 /* TrackItContainer.xib */,
+			);
+			path = TrackItContainer;
 			sourceTree = "<group>";
 		};
 		122640BF2A0B836F004D11B3 = {
@@ -280,6 +294,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1213DF6B2A150AA9000E2FB0 /* TrackItContainer.xib in Resources */,
 				1213DF622A14BF4A000E2FB0 /* DoTodayTableViewExtraTaskCell.xib in Resources */,
 				122640F42A0E6C45004D11B3 /* NotificationTableViewCell.xib in Resources */,
 				1213DF442A136399000E2FB0 /* DoTodayTableViewCalendarCell.xib in Resources */,
@@ -348,6 +363,7 @@
 				122640CE2A0B836F004D11B3 /* SceneDelegate.swift in Sources */,
 				1213DF4A2A1396C8000E2FB0 /* ProfileView.swift in Sources */,
 				1213DF582A13B400000E2FB0 /* DoTodayTableViewBasicTasksCell.swift in Sources */,
+				1213DF692A1509E3000E2FB0 /* TrackItContainer.swift in Sources */,
 				122640EC2A0D2246004D11B3 /* TabBarViewController.swift in Sources */,
 				1213DF522A13A570000E2FB0 /* UIConfigurations.swift in Sources */,
 				122640F32A0E6C45004D11B3 /* NotificationTableViewCell.swift in Sources */,
