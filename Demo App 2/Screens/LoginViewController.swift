@@ -53,16 +53,18 @@ class LoginViewController: UIViewController {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         
         if let username = usernameTextField.text, let password = passwordTextField.text {
+            ActivityIndicator.shared.showActivityIndicator(on: self.view)
             let levelUpAPI = LevelUpAPI()
             levelUpAPI.login(email: username.isEmpty ? "agent_0@mailinator.com" : username, password: password.isEmpty ? "123456" : password, completion: { [weak self] first_login in
-                if first_login {
+                if first_login == .NewUser {
                     let destinationVC = storyboard.instantiateViewController(withIdentifier: "UpdatePasswordViewController") as! UpdatePasswordViewController
                     self?.navigationController?.pushViewController(destinationVC, animated: true)
                 }
-                else {
+                else if first_login == .ExistingUser {
                     let destinationVC  = storyboard.instantiateViewController(withIdentifier: "TabBarViewController") as! UITabBarController
                     self?.navigationController?.pushViewController(destinationVC, animated: true)
                 }
+                ActivityIndicator.shared.hideActivityIndicator()
             })
         }
         

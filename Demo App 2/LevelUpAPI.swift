@@ -1,10 +1,14 @@
 import Alamofire
 import Foundation
 
+enum User {
+    case NewUser, ExistingUser, InvalidUser
+}
+
 class LevelUpAPI {
     let baseUrl: String = "https://staging.cblevelup.com/"
     
-    func login(email: String, password: String, completion: @escaping (Bool) -> Void) {
+    func login(email: String, password: String, completion: @escaping (User) -> Void) {
         let loginUrl = "\(baseUrl)/api/v1/users/sign_in.json"
         
         let parameters: [String: Any] = [
@@ -13,14 +17,18 @@ class LevelUpAPI {
         ]
         
         AF.request(loginUrl, method: .post, parameters: parameters, encoding: URLEncoding.default).responseJSON { response in
+            var user: User = .ExistingUser
             switch response.result {
             case .success(let value):
-                var first_login: Bool = false
                 if let json = value as? [String: Any] {
-                    first_login = json["first_login?"] as! Bool
+                    let first_login = json["first_login?"] as! Bool
+                    if first_login {
+                        user = .NewUser
+                    }
                 }
-                completion(first_login)
+                completion(user)
             case .failure(let error):
+                completion(User.InvalidUser)
                 print("Error: \(error)")
             }
         }

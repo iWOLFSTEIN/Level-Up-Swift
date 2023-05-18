@@ -24,6 +24,7 @@
 		1213DF6E2A16394F000E2FB0 /* UpdatePasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1213DF6D2A16394F000E2FB0 /* UpdatePasswordViewController.swift */; };
 		1213DF702A163DDE000E2FB0 /* UpdatePasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1213DF6F2A163DDE000E2FB0 /* UpdatePasswordView.swift */; };
 		1213DF722A164A8A000E2FB0 /* LevelUpAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1213DF712A164A8A000E2FB0 /* LevelUpAPI.swift */; };
+		1213DF762A165DEE000E2FB0 /* ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1213DF752A165DEE000E2FB0 /* ActivityIndicator.swift */; };
 		122640CC2A0B836F004D11B3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 122640CB2A0B836F004D11B3 /* AppDelegate.swift */; };
 		122640CE2A0B836F004D11B3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 122640CD2A0B836F004D11B3 /* SceneDelegate.swift */; };
 		122640D02A0B836F004D11B3 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 122640CF2A0B836F004D11B3 /* LoginViewController.swift */; };
@@ -58,6 +59,7 @@
 		1213DF6D2A16394F000E2FB0 /* UpdatePasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdatePasswordViewController.swift; sourceTree = "<group>"; };
 		1213DF6F2A163DDE000E2FB0 /* UpdatePasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdatePasswordView.swift; sourceTree = "<group>"; };
 		1213DF712A164A8A000E2FB0 /* LevelUpAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LevelUpAPI.swift; sourceTree = "<group>"; };
+		1213DF752A165DEE000E2FB0 /* ActivityIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicator.swift; sourceTree = "<group>"; };
 		122640C82A0B836F004D11B3 /* Demo App 2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Demo App 2.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		122640CB2A0B836F004D11B3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		122640CD2A0B836F004D11B3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -128,6 +130,7 @@
 			children = (
 				1213DF5E2A13B5A4000E2FB0 /* TaskTile */,
 				1213DF6C2A150AE4000E2FB0 /* TrackItContainer */,
+				1213DF752A165DEE000E2FB0 /* ActivityIndicator.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -380,6 +383,7 @@
 				1213DF702A163DDE000E2FB0 /* UpdatePasswordView.swift in Sources */,
 				122640F32A0E6C45004D11B3 /* NotificationTableViewCell.swift in Sources */,
 				1213DF482A139696000E2FB0 /* ProfileViewController.swift in Sources */,
+				1213DF762A165DEE000E2FB0 /* ActivityIndicator.swift in Sources */,
 				1213DF432A136399000E2FB0 /* DoTodayTableViewCalendarCell.swift in Sources */,
 				1213DF612A14BF4A000E2FB0 /* DoTodayTableViewExtraTaskCell.swift in Sources */,
 				122640F02A0E697C004D11B3 /* NotificationsViewController.swift in Sources */,
