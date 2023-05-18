@@ -9,7 +9,7 @@ import SVGKit
 import UIKit
 
 class LoginViewController: UIViewController {
-
+    
     @IBOutlet weak var appLogo: UIImageView!
     @IBOutlet weak var usernameTextFieldView: UIView!
     @IBOutlet weak var passwordTextFieldView: UIView!
@@ -51,9 +51,22 @@ class LoginViewController: UIViewController {
     
     @IBAction func login( _ sender: UIButton) {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
-//        let destinationVC = storyboard.instantiateViewController(withIdentifier: "TabBarViewController") as! UITabBarController
-        let destinationVC = storyboard.instantiateViewController(withIdentifier: "UpdatePasswordViewController") as! UpdatePasswordViewController
-        navigationController?.pushViewController(destinationVC, animated: true)
+        
+        if let username = usernameTextField.text, let password = passwordTextField.text {
+            let levelUpAPI = LevelUpAPI()
+            levelUpAPI.login(email: username.isEmpty ? "agent_0@mailinator.com" : username, password: password.isEmpty ? "123456" : password, completion: { [weak self] first_login in
+                if first_login {
+                    let destinationVC = storyboard.instantiateViewController(withIdentifier: "UpdatePasswordViewController") as! UpdatePasswordViewController
+                    self?.navigationController?.pushViewController(destinationVC, animated: true)
+                }
+                else {
+                    let destinationVC  = storyboard.instantiateViewController(withIdentifier: "TabBarViewController") as! UITabBarController
+                    self?.navigationController?.pushViewController(destinationVC, animated: true)
+                }
+            })
+        }
+        
+        
     }
     
     @objc func togglePasswordVisibility() {

@@ -695,7 +695,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Group 6780" translatesAutoresizingMaskIntoConstraints="NO" id="ond-cr-LJf">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="updateLock" translatesAutoresizingMaskIntoConstraints="NO" id="ond-cr-LJf">
                                 <rect key="frame" x="135" y="139" width="120" height="120"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="120" id="F0H-7t-jXM"/>
@@ -1425,6 +1425,7 @@
         <image name="company_logo" width="241.63699340820312" height="16.517000198364258"/>
         <image name="flag_black_24dp" width="34" height="34"/>
         <image name="left-arrow" width="170.66667175292969" height="170.66667175292969"/>
+        <image name="updateLock" width="120" height="120"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
