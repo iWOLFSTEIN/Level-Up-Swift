@@ -23,7 +23,7 @@
                                     <constraint firstAttribute="height" constant="63.25" id="r29-CU-vJz"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Login" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vLX-bN-5F1">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LOGIN" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vLX-bN-5F1">
                                 <rect key="frame" x="155" y="332" width="80" height="28"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="28" id="NMf-ha-ce5"/>
@@ -616,6 +616,141 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aS0-4I-r1c" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="116.92307692307692" y="-2.1327014218009479"/>
+        </scene>
+        <!--Update Password View Controller-->
+        <scene sceneID="jot-5L-rLQ">
+            <objects>
+                <viewController storyboardIdentifier="UpdatePasswordViewController" id="t4S-SG-aqX" customClass="UpdatePasswordViewController" customModule="Demo_App_2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="qSM-7E-MnR" customClass="UpdatePasswordView" customModule="Demo_App_2" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="company_logo" translatesAutoresizingMaskIntoConstraints="NO" id="hG9-FV-dYe">
+                                <rect key="frame" x="74.666666666666686" y="769.66666666666663" width="241" height="16"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="F4s-za-vdl">
+                                <rect key="frame" x="16" y="376" width="358" height="55"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="New Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="B7t-Fy-ZxP">
+                                        <rect key="frame" x="16" y="10.666666666666686" width="326" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="B7t-Fy-ZxP" secondAttribute="trailing" constant="16" id="6TI-Gt-7HH"/>
+                                    <constraint firstItem="B7t-Fy-ZxP" firstAttribute="leading" secondItem="F4s-za-vdl" secondAttribute="leading" constant="16" id="9pM-dz-pnC"/>
+                                    <constraint firstAttribute="bottom" secondItem="B7t-Fy-ZxP" secondAttribute="bottom" constant="10.5" id="CZQ-ZH-8Qa"/>
+                                    <constraint firstAttribute="height" constant="55" id="OWH-av-FwJ"/>
+                                    <constraint firstItem="B7t-Fy-ZxP" firstAttribute="top" secondItem="F4s-za-vdl" secondAttribute="top" constant="10.5" id="dsQ-LG-oBq"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bdi-KE-cF1">
+                                <rect key="frame" x="16" y="445" width="358" height="55"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Confirm Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ef1-4w-Ou5">
+                                        <rect key="frame" x="16" y="10.666666666666686" width="326" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="ef1-4w-Ou5" firstAttribute="top" secondItem="bdi-KE-cF1" secondAttribute="top" constant="10.5" id="6CM-RD-glx"/>
+                                    <constraint firstAttribute="height" constant="55" id="Cqv-hi-HeH"/>
+                                    <constraint firstItem="ef1-4w-Ou5" firstAttribute="leading" secondItem="bdi-KE-cF1" secondAttribute="leading" constant="16" id="K3t-Li-aTu"/>
+                                    <constraint firstAttribute="bottom" secondItem="ef1-4w-Ou5" secondAttribute="bottom" constant="10.5" id="hrE-hF-Y3k"/>
+                                    <constraint firstAttribute="trailing" secondItem="ef1-4w-Ou5" secondAttribute="trailing" constant="16" id="oCd-YR-PDV"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dce-xh-GNf">
+                                <rect key="frame" x="16" y="540" width="358" height="45"/>
+                                <color key="backgroundColor" red="0.1215686275" green="0.41176470590000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="hD9-Xz-2cA"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="update">
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="login:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ScQ-gJ-HO8"/>
+                                    <action selector="updatePassword:" destination="t4S-SG-aqX" eventType="touchUpInside" id="dwU-bC-NSO"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="UPDATE PASSWORD" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EV9-9L-cBh">
+                                <rect key="frame" x="84.666666666666686" y="288" width="221" height="28"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="28" id="BVC-LB-YC3"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please update your password" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nh9-W2-UVY">
+                                <rect key="frame" x="102" y="332" width="186" height="16"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="16" id="LCW-Pz-3O7"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Group 6780" translatesAutoresizingMaskIntoConstraints="NO" id="ond-cr-LJf">
+                                <rect key="frame" x="135" y="139" width="120" height="120"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="120" id="F0H-7t-jXM"/>
+                                    <constraint firstAttribute="width" constant="120" id="fx7-Ei-ANV"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="POWERED  BY" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ft2-1O-glF">
+                                <rect key="frame" x="148" y="738.66666666666663" width="94" height="16"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="16" id="AQl-0Q-OSS"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" red="0.14901960780000001" green="0.45098039220000002" blue="0.83529411760000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="tve-Hv-Bmg"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="ond-cr-LJf" firstAttribute="top" secondItem="tve-Hv-Bmg" secondAttribute="top" constant="92" id="0ue-6f-JZx"/>
+                            <constraint firstItem="bdi-KE-cF1" firstAttribute="leading" secondItem="tve-Hv-Bmg" secondAttribute="leading" constant="16" id="4IV-un-zr5"/>
+                            <constraint firstItem="tve-Hv-Bmg" firstAttribute="trailing" secondItem="dce-xh-GNf" secondAttribute="trailing" constant="16" id="700-S4-5pj"/>
+                            <constraint firstItem="tve-Hv-Bmg" firstAttribute="trailing" secondItem="F4s-za-vdl" secondAttribute="trailing" constant="16" id="7rB-9t-fKK"/>
+                            <constraint firstItem="nh9-W2-UVY" firstAttribute="top" secondItem="EV9-9L-cBh" secondAttribute="bottom" constant="16" id="C13-xx-Fp8"/>
+                            <constraint firstItem="dce-xh-GNf" firstAttribute="leading" secondItem="tve-Hv-Bmg" secondAttribute="leading" constant="16" id="FXV-mP-CBF"/>
+                            <constraint firstItem="hG9-FV-dYe" firstAttribute="top" secondItem="Ft2-1O-glF" secondAttribute="bottom" constant="15.01" id="HpI-7r-llC"/>
+                            <constraint firstItem="nh9-W2-UVY" firstAttribute="centerX" secondItem="qSM-7E-MnR" secondAttribute="centerX" id="LJz-RU-nGd"/>
+                            <constraint firstItem="F4s-za-vdl" firstAttribute="leading" secondItem="tve-Hv-Bmg" secondAttribute="leading" constant="16" id="LcP-7J-bAz"/>
+                            <constraint firstItem="tve-Hv-Bmg" firstAttribute="bottom" secondItem="hG9-FV-dYe" secondAttribute="bottom" constant="24.469999999999999" id="MDO-9y-rdc"/>
+                            <constraint firstItem="Ft2-1O-glF" firstAttribute="centerX" secondItem="qSM-7E-MnR" secondAttribute="centerX" id="Q59-cf-oGu"/>
+                            <constraint firstItem="ond-cr-LJf" firstAttribute="centerX" secondItem="qSM-7E-MnR" secondAttribute="centerX" id="YYb-2U-3lk"/>
+                            <constraint firstItem="Ft2-1O-glF" firstAttribute="top" secondItem="dce-xh-GNf" secondAttribute="bottom" constant="153.66999999999999" id="aoN-Lk-seE"/>
+                            <constraint firstItem="EV9-9L-cBh" firstAttribute="top" secondItem="ond-cr-LJf" secondAttribute="bottom" constant="29" id="b7R-E7-dLl"/>
+                            <constraint firstItem="EV9-9L-cBh" firstAttribute="centerX" secondItem="qSM-7E-MnR" secondAttribute="centerX" id="fIc-AR-75V"/>
+                            <constraint firstItem="dce-xh-GNf" firstAttribute="top" secondItem="bdi-KE-cF1" secondAttribute="bottom" constant="40" id="fya-X2-iaP"/>
+                            <constraint firstItem="F4s-za-vdl" firstAttribute="top" secondItem="nh9-W2-UVY" secondAttribute="bottom" constant="28" id="ifX-AP-mCY"/>
+                            <constraint firstItem="tve-Hv-Bmg" firstAttribute="trailing" secondItem="bdi-KE-cF1" secondAttribute="trailing" constant="16" id="paT-qg-Fz4"/>
+                            <constraint firstItem="bdi-KE-cF1" firstAttribute="top" secondItem="F4s-za-vdl" secondAttribute="bottom" constant="14" id="qZ5-ed-p3S"/>
+                            <constraint firstItem="hG9-FV-dYe" firstAttribute="centerX" secondItem="qSM-7E-MnR" secondAttribute="centerX" id="xdC-d9-D7M"/>
+                        </constraints>
+                        <connections>
+                            <outlet property="confirmPasswordTextField" destination="ef1-4w-Ou5" id="pPi-Ng-2o4"/>
+                            <outlet property="confirmPasswordTextFieldView" destination="bdi-KE-cF1" id="v95-16-HqN"/>
+                            <outlet property="passwordTextField" destination="B7t-Fy-ZxP" id="wfx-pl-9H1"/>
+                            <outlet property="passwordTextFieldView" destination="F4s-za-vdl" id="bAE-ec-cHQ"/>
+                            <outlet property="updateButton" destination="dce-xh-GNf" id="4Qq-Ga-0uZ"/>
+                        </connections>
+                    </view>
+                    <connections>
+                        <outlet property="contentView" destination="qSM-7E-MnR" id="N9d-KG-pml"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HoD-vb-jzz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1902" y="-2"/>
         </scene>
         <!--Tab Bar View Controller-->
         <scene sceneID="Nvm-Mn-66A">

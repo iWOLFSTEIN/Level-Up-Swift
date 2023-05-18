@@ -21,6 +21,8 @@
 		1213DF672A14FE51000E2FB0 /* TrackItViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1213DF662A14FE51000E2FB0 /* TrackItViewController.swift */; };
 		1213DF692A1509E3000E2FB0 /* TrackItContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1213DF682A1509E3000E2FB0 /* TrackItContainer.swift */; };
 		1213DF6B2A150AA9000E2FB0 /* TrackItContainer.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1213DF6A2A150AA9000E2FB0 /* TrackItContainer.xib */; };
+		1213DF6E2A16394F000E2FB0 /* UpdatePasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1213DF6D2A16394F000E2FB0 /* UpdatePasswordViewController.swift */; };
+		1213DF702A163DDE000E2FB0 /* UpdatePasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1213DF6F2A163DDE000E2FB0 /* UpdatePasswordView.swift */; };
 		122640CC2A0B836F004D11B3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 122640CB2A0B836F004D11B3 /* AppDelegate.swift */; };
 		122640CE2A0B836F004D11B3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 122640CD2A0B836F004D11B3 /* SceneDelegate.swift */; };
 		122640D02A0B836F004D11B3 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 122640CF2A0B836F004D11B3 /* LoginViewController.swift */; };
@@ -52,6 +54,8 @@
 		1213DF662A14FE51000E2FB0 /* TrackItViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackItViewController.swift; sourceTree = "<group>"; };
 		1213DF682A1509E3000E2FB0 /* TrackItContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackItContainer.swift; sourceTree = "<group>"; };
 		1213DF6A2A150AA9000E2FB0 /* TrackItContainer.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TrackItContainer.xib; sourceTree = "<group>"; };
+		1213DF6D2A16394F000E2FB0 /* UpdatePasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdatePasswordViewController.swift; sourceTree = "<group>"; };
+		1213DF6F2A163DDE000E2FB0 /* UpdatePasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdatePasswordView.swift; sourceTree = "<group>"; };
 		122640C82A0B836F004D11B3 /* Demo App 2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Demo App 2.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		122640CB2A0B836F004D11B3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		122640CD2A0B836F004D11B3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -97,6 +101,11 @@
 		1213DF452A139621000E2FB0 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				122640EB2A0D2246004D11B3 /* TabBarViewController.swift */,
+				122640CF2A0B836F004D11B3 /* LoginViewController.swift */,
+				1213DF6D2A16394F000E2FB0 /* UpdatePasswordViewController.swift */,
+				1213DF6F2A163DDE000E2FB0 /* UpdatePasswordView.swift */,
+				1213DF662A14FE51000E2FB0 /* TrackItViewController.swift */,
 				1213DF652A14EF55000E2FB0 /* DoToday */,
 				1213DF462A13963C000E2FB0 /* Home */,
 				1213DF3A2A126CEB000E2FB0 /* NotificationScreen */,
@@ -202,17 +211,14 @@
 				1213DF452A139621000E2FB0 /* Screens */,
 				122640CB2A0B836F004D11B3 /* AppDelegate.swift */,
 				122640CD2A0B836F004D11B3 /* SceneDelegate.swift */,
-				122640CF2A0B836F004D11B3 /* LoginViewController.swift */,
 				122640D12A0B836F004D11B3 /* Main.storyboard */,
 				122640D42A0B8370004D11B3 /* Assets.xcassets */,
 				122640D62A0B8370004D11B3 /* LaunchScreen.storyboard */,
 				122640D92A0B8370004D11B3 /* Info.plist */,
-				122640EB2A0D2246004D11B3 /* TabBarViewController.swift */,
 				1213DF552A13B3C3000E2FB0 /* Settings */,
 				1213DF472A139696000E2FB0 /* ProfileViewController.swift */,
 				1213DF492A1396C8000E2FB0 /* ProfileView.swift */,
 				1213DF512A13A570000E2FB0 /* UIConfigurations.swift */,
-				1213DF662A14FE51000E2FB0 /* TrackItViewController.swift */,
 			);
 			path = "Demo App 2";
 			sourceTree = "<group>";
@@ -360,12 +366,14 @@
 				1213DF5B2A13B585000E2FB0 /* TaskTile.swift in Sources */,
 				12CDAD452A12531800CA9A86 /* DoTodayViewController.swift in Sources */,
 				122640CC2A0B836F004D11B3 /* AppDelegate.swift in Sources */,
+				1213DF6E2A16394F000E2FB0 /* UpdatePasswordViewController.swift in Sources */,
 				122640CE2A0B836F004D11B3 /* SceneDelegate.swift in Sources */,
 				1213DF4A2A1396C8000E2FB0 /* ProfileView.swift in Sources */,
 				1213DF582A13B400000E2FB0 /* DoTodayTableViewBasicTasksCell.swift in Sources */,
 				1213DF692A1509E3000E2FB0 /* TrackItContainer.swift in Sources */,
 				122640EC2A0D2246004D11B3 /* TabBarViewController.swift in Sources */,
 				1213DF522A13A570000E2FB0 /* UIConfigurations.swift in Sources */,
+				1213DF702A163DDE000E2FB0 /* UpdatePasswordView.swift in Sources */,
 				122640F32A0E6C45004D11B3 /* NotificationTableViewCell.swift in Sources */,
 				1213DF482A139696000E2FB0 /* ProfileViewController.swift in Sources */,
 				1213DF432A136399000E2FB0 /* DoTodayTableViewCalendarCell.swift in Sources */,
