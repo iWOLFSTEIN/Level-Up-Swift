@@ -10,7 +10,7 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var loginButton: UIButton!
     @IBOutlet weak var usernameTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
-    
+        
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -46,7 +46,7 @@ class LoginViewController: UIViewController {
         
         if let username = usernameTextField.text, let password = passwordTextField.text {
             
-            ActivityIndicator.shared.showActivityIndicator(on: self.view)
+            ActivityIndicator.shared.showActivityIndicator(on: self.view, withAlpha: 0.5)
             
             let email = username.isEmpty ? "agent_0@mailinator.com" : username
             let password = password.isEmpty ? "123456" : password
@@ -54,12 +54,18 @@ class LoginViewController: UIViewController {
             
             loginViewModel.bind = {
                 let user = loginViewModel.user
+                let responseHeaders = loginViewModel.headers
+                print(user)
+                print(responseHeaders)
+                
                 if user == .NewUser {
                     let destinationVC = storyboard.instantiateViewController(withIdentifier: "UpdatePasswordViewController") as! UpdatePasswordViewController
                     self.navigationController?.pushViewController(destinationVC, animated: true)
                 }
                 else if user == .ExistingUser {
-                    let destinationVC  = storyboard.instantiateViewController(withIdentifier: "TabBarViewController") as! UITabBarController
+                    let destinationVC  = storyboard.instantiateViewController(withIdentifier: "TabBarViewController") as! TabBarViewController
+                    print("Printing content type in login screen \(responseHeaders.contentType)")
+                    destinationVC.responseHeaders = responseHeaders
                     self.navigationController?.pushViewController(destinationVC, animated: true)
                 }
                 

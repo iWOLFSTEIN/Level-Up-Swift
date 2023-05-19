@@ -3,10 +3,11 @@ import UIKit
 class TabBarViewController: UITabBarController {
     
     let blueBarView = UIView()
+    var responseHeaders: ResponseHeaders!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-                
+                        
         blueBarView.backgroundColor = UIColor(named: "tabBarIndicator")
         blueBarView.translatesAutoresizingMaskIntoConstraints = false
         tabBar.addSubview(blueBarView)
