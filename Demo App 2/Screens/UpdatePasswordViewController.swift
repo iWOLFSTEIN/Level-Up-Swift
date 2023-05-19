@@ -2,7 +2,7 @@ import UIKit
 
 class UpdatePasswordViewController: UIViewController {
 
-    @IBOutlet var contentView: UpdatePasswordView!
+    @IBOutlet var contentView: UpdatePasswordContentView!
     override func viewDidLoad() {
         super.viewDidLoad()
 

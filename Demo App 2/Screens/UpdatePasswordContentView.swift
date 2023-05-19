@@ -7,7 +7,7 @@
 
 import UIKit
 
-class UpdatePasswordView: UIView {
+class UpdatePasswordContentView: UIView {
     
     @IBOutlet weak var passwordTextFieldView: UIView!
     @IBOutlet weak var confirmPasswordTextFieldView: UIView!

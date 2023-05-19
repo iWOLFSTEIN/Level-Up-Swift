@@ -1,10 +1,3 @@
-//
-//  ViewController.swift
-//  Demo App 2
-//
-//  Created by BrainX Technologies on 10/05/2023.
-//
-
 import SVGKit
 import UIKit
 
@@ -20,7 +13,6 @@ class LoginViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
         
         usernameTextFieldView.layer.cornerRadius = 10
         usernameTextFieldView.layer.borderWidth = 1
@@ -53,22 +45,29 @@ class LoginViewController: UIViewController {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         
         if let username = usernameTextField.text, let password = passwordTextField.text {
+            
             ActivityIndicator.shared.showActivityIndicator(on: self.view)
-            let levelUpAPI = LevelUpAPI()
-            levelUpAPI.login(email: username.isEmpty ? "agent_0@mailinator.com" : username, password: password.isEmpty ? "123456" : password, completion: { [weak self] first_login in
-                if first_login == .NewUser {
+            
+            let email = username.isEmpty ? "agent_0@mailinator.com" : username
+            let password = password.isEmpty ? "123456" : password
+            let loginViewModel = LoginViewModel(email: email, password: password)
+            
+            loginViewModel.bind = {
+                let user = loginViewModel.user
+                if user == .NewUser {
                     let destinationVC = storyboard.instantiateViewController(withIdentifier: "UpdatePasswordViewController") as! UpdatePasswordViewController
-                    self?.navigationController?.pushViewController(destinationVC, animated: true)
+                    self.navigationController?.pushViewController(destinationVC, animated: true)
                 }
-                else if first_login == .ExistingUser {
+                else if user == .ExistingUser {
                     let destinationVC  = storyboard.instantiateViewController(withIdentifier: "TabBarViewController") as! UITabBarController
-                    self?.navigationController?.pushViewController(destinationVC, animated: true)
+                    self.navigationController?.pushViewController(destinationVC, animated: true)
                 }
-                ActivityIndicator.shared.hideActivityIndicator()
-            })
+                
+                DispatchQueue.main.async {
+                    ActivityIndicator.shared.hideActivityIndicator()
+                }
+            }
         }
-        
-        
     }
     
     @objc func togglePasswordVisibility() {

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		05937F7C2A1781CD00CA3B79 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05937F7B2A1781CD00CA3B79 /* LoginViewModel.swift */; };
+		05937F7E2A1782AD00CA3B79 /* LoginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05937F7D2A1782AD00CA3B79 /* LoginModel.swift */; };
 		1213DF432A136399000E2FB0 /* DoTodayTableViewCalendarCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1213DF412A136399000E2FB0 /* DoTodayTableViewCalendarCell.swift */; };
 		1213DF442A136399000E2FB0 /* DoTodayTableViewCalendarCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1213DF422A136399000E2FB0 /* DoTodayTableViewCalendarCell.xib */; };
 		1213DF482A139696000E2FB0 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1213DF472A139696000E2FB0 /* ProfileViewController.swift */; };
@@ -22,7 +24,7 @@
 		1213DF692A1509E3000E2FB0 /* TrackItContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1213DF682A1509E3000E2FB0 /* TrackItContainer.swift */; };
 		1213DF6B2A150AA9000E2FB0 /* TrackItContainer.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1213DF6A2A150AA9000E2FB0 /* TrackItContainer.xib */; };
 		1213DF6E2A16394F000E2FB0 /* UpdatePasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1213DF6D2A16394F000E2FB0 /* UpdatePasswordViewController.swift */; };
-		1213DF702A163DDE000E2FB0 /* UpdatePasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1213DF6F2A163DDE000E2FB0 /* UpdatePasswordView.swift */; };
+		1213DF702A163DDE000E2FB0 /* UpdatePasswordContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1213DF6F2A163DDE000E2FB0 /* UpdatePasswordContentView.swift */; };
 		1213DF722A164A8A000E2FB0 /* LevelUpAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1213DF712A164A8A000E2FB0 /* LevelUpAPI.swift */; };
 		1213DF762A165DEE000E2FB0 /* ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1213DF752A165DEE000E2FB0 /* ActivityIndicator.swift */; };
 		122640CC2A0B836F004D11B3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 122640CB2A0B836F004D11B3 /* AppDelegate.swift */; };
@@ -42,6 +44,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		05937F7B2A1781CD00CA3B79 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		05937F7D2A1782AD00CA3B79 /* LoginModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginModel.swift; sourceTree = "<group>"; };
 		1213DF412A136399000E2FB0 /* DoTodayTableViewCalendarCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoTodayTableViewCalendarCell.swift; sourceTree = "<group>"; };
 		1213DF422A136399000E2FB0 /* DoTodayTableViewCalendarCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DoTodayTableViewCalendarCell.xib; sourceTree = "<group>"; };
 		1213DF472A139696000E2FB0 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
@@ -57,7 +61,7 @@
 		1213DF682A1509E3000E2FB0 /* TrackItContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackItContainer.swift; sourceTree = "<group>"; };
 		1213DF6A2A150AA9000E2FB0 /* TrackItContainer.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TrackItContainer.xib; sourceTree = "<group>"; };
 		1213DF6D2A16394F000E2FB0 /* UpdatePasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdatePasswordViewController.swift; sourceTree = "<group>"; };
-		1213DF6F2A163DDE000E2FB0 /* UpdatePasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdatePasswordView.swift; sourceTree = "<group>"; };
+		1213DF6F2A163DDE000E2FB0 /* UpdatePasswordContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdatePasswordContentView.swift; sourceTree = "<group>"; };
 		1213DF712A164A8A000E2FB0 /* LevelUpAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LevelUpAPI.swift; sourceTree = "<group>"; };
 		1213DF752A165DEE000E2FB0 /* ActivityIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicator.swift; sourceTree = "<group>"; };
 		122640C82A0B836F004D11B3 /* Demo App 2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Demo App 2.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -92,6 +96,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		05937F7A2A17811A00CA3B79 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				122640CF2A0B836F004D11B3 /* LoginViewController.swift */,
+				05937F7B2A1781CD00CA3B79 /* LoginViewModel.swift */,
+				05937F7D2A1782AD00CA3B79 /* LoginModel.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
 		1213DF3A2A126CEB000E2FB0 /* NotificationScreen */ = {
 			isa = PBXGroup;
 			children = (
@@ -106,9 +120,9 @@
 			isa = PBXGroup;
 			children = (
 				122640EB2A0D2246004D11B3 /* TabBarViewController.swift */,
-				122640CF2A0B836F004D11B3 /* LoginViewController.swift */,
+				05937F7A2A17811A00CA3B79 /* Login */,
 				1213DF6D2A16394F000E2FB0 /* UpdatePasswordViewController.swift */,
-				1213DF6F2A163DDE000E2FB0 /* UpdatePasswordView.swift */,
+				1213DF6F2A163DDE000E2FB0 /* UpdatePasswordContentView.swift */,
 				1213DF662A14FE51000E2FB0 /* TrackItViewController.swift */,
 				1213DF652A14EF55000E2FB0 /* DoToday */,
 				1213DF462A13963C000E2FB0 /* Home */,
@@ -367,6 +381,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				05937F7C2A1781CD00CA3B79 /* LoginViewModel.swift in Sources */,
 				1213DF672A14FE51000E2FB0 /* TrackItViewController.swift in Sources */,
 				122640D02A0B836F004D11B3 /* LoginViewController.swift in Sources */,
 				1213DF5B2A13B585000E2FB0 /* TaskTile.swift in Sources */,
@@ -379,8 +394,9 @@
 				1213DF582A13B400000E2FB0 /* DoTodayTableViewBasicTasksCell.swift in Sources */,
 				1213DF692A1509E3000E2FB0 /* TrackItContainer.swift in Sources */,
 				122640EC2A0D2246004D11B3 /* TabBarViewController.swift in Sources */,
+				05937F7E2A1782AD00CA3B79 /* LoginModel.swift in Sources */,
 				1213DF522A13A570000E2FB0 /* UIConfigurations.swift in Sources */,
-				1213DF702A163DDE000E2FB0 /* UpdatePasswordView.swift in Sources */,
+				1213DF702A163DDE000E2FB0 /* UpdatePasswordContentView.swift in Sources */,
 				122640F32A0E6C45004D11B3 /* NotificationTableViewCell.swift in Sources */,
 				1213DF482A139696000E2FB0 /* ProfileViewController.swift in Sources */,
 				1213DF762A165DEE000E2FB0 /* ActivityIndicator.swift in Sources */,
@@ -543,6 +559,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -571,6 +588,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

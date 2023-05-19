@@ -1,10 +1,6 @@
 import Alamofire
 import Foundation
 
-enum User {
-    case NewUser, ExistingUser, InvalidUser
-}
-
 class LevelUpAPI {
     let baseUrl: String = "https://staging.cblevelup.com/"
     
