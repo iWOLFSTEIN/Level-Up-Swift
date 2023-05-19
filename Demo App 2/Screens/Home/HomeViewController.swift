@@ -12,17 +12,10 @@ class HomeViewController: UIViewController {
     @IBOutlet weak var quoteAutherLabel: UILabel!
     @IBOutlet weak var quoteTextLabel: UILabel!
     
-    var quote: Quote = Quote(author: "", text: "")
-    var homeViewModel: HomeViewModel!
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         updateQuote()
-        
-        quoteAutherLabel.text = quote.author
-        quoteTextLabel.text = quote.text
         
         doTodayView.layer.cornerRadius = 12
         activitiesAndTipsView.layer.cornerRadius = 12
@@ -52,15 +45,20 @@ class HomeViewController: UIViewController {
     }
     
     func updateQuote() {
-        ActivityIndicator.shared.showActivityIndicator(on: self.view, withAlpha: 1.0)
-        
-        homeViewModel = HomeViewModel()
+        DispatchQueue.main.async {
+            ActivityIndicator.shared.showActivityIndicator(on: self.view, withAlpha: 1.0)
+        }
+        let homeViewModel = HomeViewModel()
         homeViewModel.bind = {
-            guard let upwrapped_quote = self.homeViewModel.quote else {
+            guard let quote = homeViewModel.quote else {
+                DispatchQueue.main.async {
+                    ActivityIndicator.shared.hideActivityIndicator()
+                }
                 return
             }
-            self.quote = upwrapped_quote
             DispatchQueue.main.async {
+                self.quoteAutherLabel.text = quote.author
+                self.quoteTextLabel.text = quote.text
                 ActivityIndicator.shared.hideActivityIndicator()
             }
         }

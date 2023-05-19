@@ -36,12 +36,16 @@ class LevelUpAPI {
     
     func getQuote(completion: @escaping (Result<Quote, Error>) -> Void) {
         let quoteUrl = "\(baseUrl)/api/v1/quotes/random.json"
+        guard let responseHeaders: ResponseHeaders = DataContainer.shared.responseHeaders else {
+            print(DataContainer.shared.responseHeaders)
+            return
+        }
         
         let headers: HTTPHeaders = [
             "Content-Type": "application/json",
-            "access-token": "8xw-gYrSDQiiGhE_agd3iQ",
-            "uid": "agent_0@mailinator.com",
-            "client": "ZKTBuuhMJlf33Kjw8o6prg"
+            "access-token": responseHeaders.accessToken,
+            "uid": responseHeaders.uid,
+            "client": responseHeaders.client
         ]
         
         AF.request(quoteUrl, headers: headers).validate().responseDecodable(of: Quote.self) { response in

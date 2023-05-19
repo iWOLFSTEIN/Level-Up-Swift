@@ -55,8 +55,7 @@ class LoginViewController: UIViewController {
             loginViewModel.bind = {
                 let user = loginViewModel.user
                 let responseHeaders = loginViewModel.headers
-                print(user)
-                print(responseHeaders)
+                DataContainer.shared.responseHeaders = loginViewModel.headers
                 
                 if user == .NewUser {
                     let destinationVC = storyboard.instantiateViewController(withIdentifier: "UpdatePasswordViewController") as! UpdatePasswordViewController
@@ -64,8 +63,8 @@ class LoginViewController: UIViewController {
                 }
                 else if user == .ExistingUser {
                     let destinationVC  = storyboard.instantiateViewController(withIdentifier: "TabBarViewController") as! TabBarViewController
-                    print("Printing content type in login screen \(responseHeaders.contentType)")
-                    destinationVC.responseHeaders = responseHeaders
+//                    print("Printing content type in login screen \(responseHeaders.contentType)")
+//                    destinationVC.responseHeaders = responseHeaders
                     self.navigationController?.pushViewController(destinationVC, animated: true)
                 }
                 
