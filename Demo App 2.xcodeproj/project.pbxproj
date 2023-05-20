@@ -11,6 +11,7 @@
 		05937F7E2A1782AD00CA3B79 /* LoginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05937F7D2A1782AD00CA3B79 /* LoginModel.swift */; };
 		05937F802A179DAB00CA3B79 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05937F7F2A179DAB00CA3B79 /* HomeViewModel.swift */; };
 		05937F822A179DBB00CA3B79 /* HomeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05937F812A179DBB00CA3B79 /* HomeModel.swift */; };
+		05937F852A17C14B00CA3B79 /* SharedCoontainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05937F842A17C14B00CA3B79 /* SharedCoontainer.swift */; };
 		1213DF432A136399000E2FB0 /* DoTodayTableViewCalendarCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1213DF412A136399000E2FB0 /* DoTodayTableViewCalendarCell.swift */; };
 		1213DF442A136399000E2FB0 /* DoTodayTableViewCalendarCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1213DF422A136399000E2FB0 /* DoTodayTableViewCalendarCell.xib */; };
 		1213DF522A13A570000E2FB0 /* UIConfigurations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1213DF512A13A570000E2FB0 /* UIConfigurations.swift */; };
@@ -48,6 +49,7 @@
 		05937F7D2A1782AD00CA3B79 /* LoginModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginModel.swift; sourceTree = "<group>"; };
 		05937F7F2A179DAB00CA3B79 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		05937F812A179DBB00CA3B79 /* HomeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeModel.swift; sourceTree = "<group>"; };
+		05937F842A17C14B00CA3B79 /* SharedCoontainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedCoontainer.swift; sourceTree = "<group>"; };
 		1213DF412A136399000E2FB0 /* DoTodayTableViewCalendarCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoTodayTableViewCalendarCell.swift; sourceTree = "<group>"; };
 		1213DF422A136399000E2FB0 /* DoTodayTableViewCalendarCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DoTodayTableViewCalendarCell.xib; sourceTree = "<group>"; };
 		1213DF512A13A570000E2FB0 /* UIConfigurations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIConfigurations.swift; sourceTree = "<group>"; };
@@ -239,6 +241,7 @@
 				122640D92A0B8370004D11B3 /* Info.plist */,
 				1213DF512A13A570000E2FB0 /* UIConfigurations.swift */,
 				1213DF712A164A8A000E2FB0 /* LevelUpAPI.swift */,
+				05937F842A17C14B00CA3B79 /* SharedCoontainer.swift */,
 			);
 			path = "Demo App 2";
 			sourceTree = "<group>";
@@ -402,6 +405,7 @@
 				1213DF432A136399000E2FB0 /* DoTodayTableViewCalendarCell.swift in Sources */,
 				1213DF612A14BF4A000E2FB0 /* DoTodayTableViewExtraTaskCell.swift in Sources */,
 				05937F822A179DBB00CA3B79 /* HomeModel.swift in Sources */,
+				05937F852A17C14B00CA3B79 /* SharedCoontainer.swift in Sources */,
 				122640F02A0E697C004D11B3 /* NotificationsViewController.swift in Sources */,
 				122640EE2A0D254E004D11B3 /* HomeViewController.swift in Sources */,
 				122640F62A123415004D11B3 /* SettingsViewController.swift in Sources */,

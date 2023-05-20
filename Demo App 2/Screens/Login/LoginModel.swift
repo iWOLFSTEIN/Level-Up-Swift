@@ -11,8 +11,3 @@ struct ResponseHeaders {
     var uid: String
 }
 
-class DataContainer {
-    static let shared = DataContainer()
-    var responseHeaders: ResponseHeaders?
-    private init() {}
-}
