@@ -6,6 +6,10 @@ class UpdatePasswordViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        contentView.passwordTextField.text = "123456"
+        contentView.passwordTextField.isSecureTextEntry = true
+        contentView.confirmPasswordTextField.text = "123456"
+        contentView.confirmPasswordTextField.isSecureTextEntry = true
     }
     
     @IBAction func updatePassword( _ sender: UIButton) {

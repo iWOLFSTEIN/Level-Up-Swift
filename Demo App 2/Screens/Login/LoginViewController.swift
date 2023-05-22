@@ -23,7 +23,9 @@ class LoginViewController: UIViewController {
         passwordTextFieldView.layer.borderColor = UIColor(named: "textFieldBorder")?.cgColor
         
         usernameTextField.borderStyle = .none
+        usernameTextField.text = "agent_0@mailinator.com"
         passwordTextField.borderStyle = .none
+        passwordTextField.text = "123456"
         
         let passwordTextFieldTrailingIcon = UIImageView(image: UIImage(named: "eye"))
         passwordTextField.rightView = passwordTextFieldTrailingIcon
@@ -48,9 +50,9 @@ class LoginViewController: UIViewController {
             
             ActivityIndicator.shared.showActivityIndicator(on: self.view, withAlpha: 0.5)
             
-            let email = username.isEmpty ? "agent_0@mailinator.com" : username
+            let username = username.isEmpty ? "agent_0@mailinator.com" : username
             let password = password.isEmpty ? "123456" : password
-            let loginViewModel = LoginViewModel(email: email, password: password)
+            let loginViewModel = LoginViewModel(email: username, password: password)
             
             loginViewModel.bind = {
                 let user = loginViewModel.user

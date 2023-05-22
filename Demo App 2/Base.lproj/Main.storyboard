@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="jlC-yH-MyY">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="jlC-yH-MyY">
     <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -629,6 +629,9 @@
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="company_logo" translatesAutoresizingMaskIntoConstraints="NO" id="hG9-FV-dYe">
                                 <rect key="frame" x="74.666666666666686" y="769.66666666666663" width="241" height="16"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="16" id="pez-We-U6T"/>
+                                </constraints>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="F4s-za-vdl">
                                 <rect key="frame" x="16" y="376" width="358" height="55"/>
@@ -707,6 +710,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="POWERED  BY" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ft2-1O-glF">
                                 <rect key="frame" x="148" y="738.66666666666663" width="94" height="16"/>
                                 <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="16" id="2hm-oa-dpj"/>
                                     <constraint firstAttribute="height" constant="16" id="AQl-0Q-OSS"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -723,20 +727,20 @@
                             <constraint firstItem="tve-Hv-Bmg" firstAttribute="trailing" secondItem="F4s-za-vdl" secondAttribute="trailing" constant="16" id="7rB-9t-fKK"/>
                             <constraint firstItem="nh9-W2-UVY" firstAttribute="top" secondItem="EV9-9L-cBh" secondAttribute="bottom" constant="16" id="C13-xx-Fp8"/>
                             <constraint firstItem="dce-xh-GNf" firstAttribute="leading" secondItem="tve-Hv-Bmg" secondAttribute="leading" constant="16" id="FXV-mP-CBF"/>
-                            <constraint firstItem="hG9-FV-dYe" firstAttribute="top" secondItem="Ft2-1O-glF" secondAttribute="bottom" constant="15.01" id="HpI-7r-llC"/>
                             <constraint firstItem="nh9-W2-UVY" firstAttribute="centerX" secondItem="qSM-7E-MnR" secondAttribute="centerX" id="LJz-RU-nGd"/>
                             <constraint firstItem="F4s-za-vdl" firstAttribute="leading" secondItem="tve-Hv-Bmg" secondAttribute="leading" constant="16" id="LcP-7J-bAz"/>
-                            <constraint firstItem="tve-Hv-Bmg" firstAttribute="bottom" secondItem="hG9-FV-dYe" secondAttribute="bottom" constant="24.469999999999999" id="MDO-9y-rdc"/>
                             <constraint firstItem="Ft2-1O-glF" firstAttribute="centerX" secondItem="qSM-7E-MnR" secondAttribute="centerX" id="Q59-cf-oGu"/>
                             <constraint firstItem="ond-cr-LJf" firstAttribute="centerX" secondItem="qSM-7E-MnR" secondAttribute="centerX" id="YYb-2U-3lk"/>
-                            <constraint firstItem="Ft2-1O-glF" firstAttribute="top" secondItem="dce-xh-GNf" secondAttribute="bottom" constant="153.66999999999999" id="aoN-Lk-seE"/>
                             <constraint firstItem="EV9-9L-cBh" firstAttribute="top" secondItem="ond-cr-LJf" secondAttribute="bottom" constant="29" id="b7R-E7-dLl"/>
                             <constraint firstItem="EV9-9L-cBh" firstAttribute="centerX" secondItem="qSM-7E-MnR" secondAttribute="centerX" id="fIc-AR-75V"/>
                             <constraint firstItem="dce-xh-GNf" firstAttribute="top" secondItem="bdi-KE-cF1" secondAttribute="bottom" constant="40" id="fya-X2-iaP"/>
+                            <constraint firstItem="Ft2-1O-glF" firstAttribute="centerX" secondItem="qSM-7E-MnR" secondAttribute="centerX" id="htK-mE-uRF"/>
                             <constraint firstItem="F4s-za-vdl" firstAttribute="top" secondItem="nh9-W2-UVY" secondAttribute="bottom" constant="28" id="ifX-AP-mCY"/>
+                            <constraint firstItem="hG9-FV-dYe" firstAttribute="top" secondItem="Ft2-1O-glF" secondAttribute="bottom" constant="15" id="lLt-16-mMW"/>
+                            <constraint firstItem="hG9-FV-dYe" firstAttribute="centerX" secondItem="qSM-7E-MnR" secondAttribute="centerX" id="paF-du-zJ6"/>
                             <constraint firstItem="tve-Hv-Bmg" firstAttribute="trailing" secondItem="bdi-KE-cF1" secondAttribute="trailing" constant="16" id="paT-qg-Fz4"/>
                             <constraint firstItem="bdi-KE-cF1" firstAttribute="top" secondItem="F4s-za-vdl" secondAttribute="bottom" constant="14" id="qZ5-ed-p3S"/>
-                            <constraint firstItem="hG9-FV-dYe" firstAttribute="centerX" secondItem="qSM-7E-MnR" secondAttribute="centerX" id="xdC-d9-D7M"/>
+                            <constraint firstItem="tve-Hv-Bmg" firstAttribute="bottom" secondItem="hG9-FV-dYe" secondAttribute="bottom" constant="24.329999999999998" id="zGu-Dd-YDa"/>
                         </constraints>
                         <connections>
                             <outlet property="confirmPasswordTextField" destination="ef1-4w-Ou5" id="pPi-Ng-2o4"/>
