@@ -57,15 +57,18 @@ class LoginViewController: UIViewController {
                 let responseHeaders = loginViewModel.headers
                 DataContainer.shared.responseHeaders = loginViewModel.headers
                 
-                if user == .NewUser {
-                    let destinationVC = storyboard.instantiateViewController(withIdentifier: "UpdatePasswordViewController") as! UpdatePasswordViewController
-                    self.navigationController?.pushViewController(destinationVC, animated: true)
-                }
-                else if user == .ExistingUser {
-                    let destinationVC  = storyboard.instantiateViewController(withIdentifier: "TabBarViewController") as! TabBarViewController
-//                    print("Printing content type in login screen \(responseHeaders.contentType)")
-//                    destinationVC.responseHeaders = responseHeaders
-                    self.navigationController?.pushViewController(destinationVC, animated: true)
+                let destinationVC = storyboard.instantiateViewController(withIdentifier: "UpdatePasswordViewController") as! UpdatePasswordViewController
+                self.navigationController?.pushViewController(destinationVC, animated: true)
+                
+                if false {
+                    if user == .NewUser {
+                        let destinationVC = storyboard.instantiateViewController(withIdentifier: "UpdatePasswordViewController") as! UpdatePasswordViewController
+                        self.navigationController?.pushViewController(destinationVC, animated: true)
+                    }
+                    else if user == .ExistingUser {
+                        let destinationVC  = storyboard.instantiateViewController(withIdentifier: "TabBarViewController") as! TabBarViewController
+                        self.navigationController?.pushViewController(destinationVC, animated: true)
+                    }
                 }
                 
                 DispatchQueue.main.async {

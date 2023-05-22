@@ -11,7 +11,7 @@
 		05937F7E2A1782AD00CA3B79 /* LoginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05937F7D2A1782AD00CA3B79 /* LoginModel.swift */; };
 		05937F802A179DAB00CA3B79 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05937F7F2A179DAB00CA3B79 /* HomeViewModel.swift */; };
 		05937F822A179DBB00CA3B79 /* HomeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05937F812A179DBB00CA3B79 /* HomeModel.swift */; };
-		05937F852A17C14B00CA3B79 /* SharedCoontainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05937F842A17C14B00CA3B79 /* SharedCoontainer.swift */; };
+		05937F852A17C14B00CA3B79 /* SharedContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05937F842A17C14B00CA3B79 /* SharedContainer.swift */; };
 		1213DF432A136399000E2FB0 /* DoTodayTableViewCalendarCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1213DF412A136399000E2FB0 /* DoTodayTableViewCalendarCell.swift */; };
 		1213DF442A136399000E2FB0 /* DoTodayTableViewCalendarCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1213DF422A136399000E2FB0 /* DoTodayTableViewCalendarCell.xib */; };
 		1213DF522A13A570000E2FB0 /* UIConfigurations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1213DF512A13A570000E2FB0 /* UIConfigurations.swift */; };
@@ -28,6 +28,8 @@
 		1213DF702A163DDE000E2FB0 /* UpdatePasswordContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1213DF6F2A163DDE000E2FB0 /* UpdatePasswordContentView.swift */; };
 		1213DF722A164A8A000E2FB0 /* LevelUpAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1213DF712A164A8A000E2FB0 /* LevelUpAPI.swift */; };
 		1213DF762A165DEE000E2FB0 /* ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1213DF752A165DEE000E2FB0 /* ActivityIndicator.swift */; };
+		1213DF782A1B52FB000E2FB0 /* UpdatePasswordModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1213DF772A1B52FB000E2FB0 /* UpdatePasswordModel.swift */; };
+		1213DF7A2A1B5977000E2FB0 /* UpdatePasswordViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1213DF792A1B5977000E2FB0 /* UpdatePasswordViewModel.swift */; };
 		122640CC2A0B836F004D11B3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 122640CB2A0B836F004D11B3 /* AppDelegate.swift */; };
 		122640CE2A0B836F004D11B3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 122640CD2A0B836F004D11B3 /* SceneDelegate.swift */; };
 		122640D02A0B836F004D11B3 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 122640CF2A0B836F004D11B3 /* LoginViewController.swift */; };
@@ -49,7 +51,7 @@
 		05937F7D2A1782AD00CA3B79 /* LoginModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginModel.swift; sourceTree = "<group>"; };
 		05937F7F2A179DAB00CA3B79 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		05937F812A179DBB00CA3B79 /* HomeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeModel.swift; sourceTree = "<group>"; };
-		05937F842A17C14B00CA3B79 /* SharedCoontainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedCoontainer.swift; sourceTree = "<group>"; };
+		05937F842A17C14B00CA3B79 /* SharedContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedContainer.swift; sourceTree = "<group>"; };
 		1213DF412A136399000E2FB0 /* DoTodayTableViewCalendarCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoTodayTableViewCalendarCell.swift; sourceTree = "<group>"; };
 		1213DF422A136399000E2FB0 /* DoTodayTableViewCalendarCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DoTodayTableViewCalendarCell.xib; sourceTree = "<group>"; };
 		1213DF512A13A570000E2FB0 /* UIConfigurations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIConfigurations.swift; sourceTree = "<group>"; };
@@ -66,6 +68,8 @@
 		1213DF6F2A163DDE000E2FB0 /* UpdatePasswordContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdatePasswordContentView.swift; sourceTree = "<group>"; };
 		1213DF712A164A8A000E2FB0 /* LevelUpAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LevelUpAPI.swift; sourceTree = "<group>"; };
 		1213DF752A165DEE000E2FB0 /* ActivityIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicator.swift; sourceTree = "<group>"; };
+		1213DF772A1B52FB000E2FB0 /* UpdatePasswordModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdatePasswordModel.swift; sourceTree = "<group>"; };
+		1213DF792A1B5977000E2FB0 /* UpdatePasswordViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdatePasswordViewModel.swift; sourceTree = "<group>"; };
 		122640C82A0B836F004D11B3 /* Demo App 2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Demo App 2.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		122640CB2A0B836F004D11B3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		122640CD2A0B836F004D11B3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -113,6 +117,8 @@
 			children = (
 				1213DF6D2A16394F000E2FB0 /* UpdatePasswordViewController.swift */,
 				1213DF6F2A163DDE000E2FB0 /* UpdatePasswordContentView.swift */,
+				1213DF772A1B52FB000E2FB0 /* UpdatePasswordModel.swift */,
+				1213DF792A1B5977000E2FB0 /* UpdatePasswordViewModel.swift */,
 			);
 			path = UpdatePassword;
 			sourceTree = "<group>";
@@ -241,7 +247,7 @@
 				122640D92A0B8370004D11B3 /* Info.plist */,
 				1213DF512A13A570000E2FB0 /* UIConfigurations.swift */,
 				1213DF712A164A8A000E2FB0 /* LevelUpAPI.swift */,
-				05937F842A17C14B00CA3B79 /* SharedCoontainer.swift */,
+				05937F842A17C14B00CA3B79 /* SharedContainer.swift */,
 			);
 			path = "Demo App 2";
 			sourceTree = "<group>";
@@ -394,9 +400,11 @@
 				1213DF722A164A8A000E2FB0 /* LevelUpAPI.swift in Sources */,
 				1213DF6E2A16394F000E2FB0 /* UpdatePasswordViewController.swift in Sources */,
 				122640CE2A0B836F004D11B3 /* SceneDelegate.swift in Sources */,
+				1213DF7A2A1B5977000E2FB0 /* UpdatePasswordViewModel.swift in Sources */,
 				1213DF582A13B400000E2FB0 /* DoTodayTableViewBasicTasksCell.swift in Sources */,
 				1213DF692A1509E3000E2FB0 /* TrackItContainer.swift in Sources */,
 				122640EC2A0D2246004D11B3 /* TabBarViewController.swift in Sources */,
+				1213DF782A1B52FB000E2FB0 /* UpdatePasswordModel.swift in Sources */,
 				05937F7E2A1782AD00CA3B79 /* LoginModel.swift in Sources */,
 				1213DF522A13A570000E2FB0 /* UIConfigurations.swift in Sources */,
 				1213DF702A163DDE000E2FB0 /* UpdatePasswordContentView.swift in Sources */,
@@ -405,7 +413,7 @@
 				1213DF432A136399000E2FB0 /* DoTodayTableViewCalendarCell.swift in Sources */,
 				1213DF612A14BF4A000E2FB0 /* DoTodayTableViewExtraTaskCell.swift in Sources */,
 				05937F822A179DBB00CA3B79 /* HomeModel.swift in Sources */,
-				05937F852A17C14B00CA3B79 /* SharedCoontainer.swift in Sources */,
+				05937F852A17C14B00CA3B79 /* SharedContainer.swift in Sources */,
 				122640F02A0E697C004D11B3 /* NotificationsViewController.swift in Sources */,
 				122640EE2A0D254E004D11B3 /* HomeViewController.swift in Sources */,
 				122640F62A123415004D11B3 /* SettingsViewController.swift in Sources */,
@@ -563,7 +571,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -592,7 +600,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
