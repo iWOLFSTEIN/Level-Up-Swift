@@ -56,7 +56,6 @@ class LoginViewController: UIViewController {
             
             loginViewModel.bind = {
                 let user = loginViewModel.user
-                let responseHeaders = loginViewModel.headers
                 DataContainer.shared.responseHeaders = loginViewModel.headers
                 
                 let destinationVC = storyboard.instantiateViewController(withIdentifier: "UpdatePasswordViewController") as! UpdatePasswordViewController
