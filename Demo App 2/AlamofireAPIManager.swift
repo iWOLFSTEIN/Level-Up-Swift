@@ -19,7 +19,7 @@ class AlamofireAPIManager: APIManager {
         }
     }
     
-    func performRequest<T: Decodable>(_ request: APIRequest, completion: @escaping (Result<T, Error>) -> Void) {
+    func performRequest<T: Decodable>(_ request: APIRequest, withName requestName: RequestName, completion: @escaping (Result<T, Error>) -> Void) {
         guard let url = request.url else {
             return
         }
@@ -37,12 +37,14 @@ class AlamofireAPIManager: APIManager {
             switch response.result {
             case .success(let value):
                 completion(.success(value))
-                if let responseHeaders = response.response?.allHeaderFields as? [String: String] {
-                    DataContainer.shared.responseHeaders = ResponseHeaders(
-                        contentType: responseHeaders["Content-Type"]!,
-                        accessToken: responseHeaders["access-token"]!,
-                        client: responseHeaders["client"]!,
-                        uid: responseHeaders["uid"]!)
+                if requestName == .Login {
+                    if let responseHeaders = response.response?.allHeaderFields as? [String: String] {
+                        DataContainer.shared.responseHeaders = ResponseHeaders(
+                            contentType: responseHeaders["Content-Type"]!,
+                            accessToken: responseHeaders["access-token"]!,
+                            client: responseHeaders["client"]!,
+                            uid: responseHeaders["uid"]!)
+                    }
                 }
             case .failure(let error):
                 completion(.failure(error))

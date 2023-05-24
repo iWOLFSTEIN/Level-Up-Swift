@@ -10,6 +10,6 @@ class AuthenticationRepository {
     
     func login(withEmail email: String, andPassword password: String, completion: @escaping (Result<AuthenticatedUser, Error>) -> Void) {
         let request = AuthenticationRequest.login(email: email, password: password)
-        apiManagaer.performRequest(request, completion: completion)
+        apiManagaer.performRequest(request, withName: .Login, completion: completion)
     }
 }

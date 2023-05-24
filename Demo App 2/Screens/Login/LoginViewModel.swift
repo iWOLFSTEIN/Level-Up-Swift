@@ -32,6 +32,18 @@ class LoginViewModel {
                 print("Throwing this error \(error)")
                 self.user = .InvalidUser
             }
+            
+            let alamofireAPIManager = AlamofireAPIManager(authProvider: UserDefaultAuth())
+            let generalRepository = GeneralRepository(apiManagaer: alamofireAPIManager)
+            generalRepository.getQuote { [weak self] (result: Result<Quote, Error>) in
+                switch result {
+                case .success(let quote):
+                    print(quote)
+                case .failure(let error):
+                    print("Error Getting Quote is: \(error)")
+                }
+            }
+            
         })
     }
 }

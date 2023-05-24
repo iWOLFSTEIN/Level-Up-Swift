@@ -9,59 +9,51 @@ protocol APIRequest {
     var parameters: Parameters? { get }
 }
 
+enum RequestName {
+    case Login, Quote, UpdatePassword
+}
+
 protocol AuthProvider {
     func authenticationHeaders() -> HTTPHeaders
 }
 
 protocol APIManager {
     var authProvider: AuthProvider? { get set }
-    func performRequest<T: Decodable>(_ request: APIRequest, completion: @escaping (Result<T, Error>) -> Void)
+    func performRequest<T: Decodable>(_ request: APIRequest, withName requestName: RequestName, completion: @escaping (Result<T, Error>) -> Void)
 }
 
 class LevelUpAPI {
     let baseUrl: String = "https://staging.cblevelup.com/"
     
-    func login(email: String, password: String, completion: @escaping (User, [String: String]) -> Void) {
-        let loginUrl = "\(baseUrl)/api/v1/users/sign_in.json"
-        
-        let parameters: [String: Any] = [
-            "email": email,
-            "password": password
-        ]
-        
-//        let alamofireAPIManager: AlamofireAPIManager = AlamofireAPIManager()
-//        let authenticationRepository: AuthenticationRepository = AuthenticationRepository(apiManagaer: alamofireAPIManager)
-//        authenticationRepository.login(withEmail: email, andPassword: password, completion: {
-//            (result: Result<AuthenticatedUser, Error>) in
-//            switch result {
-//            case .success(let authenticatedUser):
-//                print(authenticatedUser)
+//    func login(email: String, password: String, completion: @escaping (User, [String: String]) -> Void) {
+//        let loginUrl = "\(baseUrl)/api/v1/users/sign_in.json"
+//
+//        let parameters: [String: Any] = [
+//            "email": email,
+//            "password": password
+//        ]
+//
+//        AF.request(loginUrl, method: .post, parameters: parameters, encoding: URLEncoding.default).responseJSON { response in
+//
+//            var user: User = .ExistingUser
+//            var responseHeaders: [String: String] = [:]
+//
+//            switch response.result {
+//            case .success(let value):
+//                if let json = value as? [String: Any] {
+//                    let first_login = json["first_login?"] as! Bool
+//                    if first_login {
+//                        user = .NewUser
+//                    }
+//                }
+//                responseHeaders = response.response?.allHeaderFields as? [String: String] ?? [:]
+//                completion(user, responseHeaders)
 //            case .failure(let error):
-//                print("Throwing this error \(error)")
+//                completion(User.InvalidUser, responseHeaders)
+//                print("Error: \(error)")
 //            }
-//        })
-        
-        AF.request(loginUrl, method: .post, parameters: parameters, encoding: URLEncoding.default).responseJSON { response in
-            
-            var user: User = .ExistingUser
-            var responseHeaders: [String: String] = [:]
-            
-            switch response.result {
-            case .success(let value):
-                if let json = value as? [String: Any] {
-                    let first_login = json["first_login?"] as! Bool
-                    if first_login {
-                        user = .NewUser
-                    }
-                }
-                responseHeaders = response.response?.allHeaderFields as? [String: String] ?? [:]
-                completion(user, responseHeaders)
-            case .failure(let error):
-                completion(User.InvalidUser, responseHeaders)
-                print("Error: \(error)")
-            }
-        }
-    }
+//        }
+//    }
     
     func getQuote(completion: @escaping (Result<Quote, Error>) -> Void) {
         let quoteUrl = "\(baseUrl)/api/v1/quotes/random.json"

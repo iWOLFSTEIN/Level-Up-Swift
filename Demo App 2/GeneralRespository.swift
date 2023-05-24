@@ -7,8 +7,8 @@ class GeneralRepository {
         self.apiManagaer = apiManagaer
     }
     
-    func login(withEmail email: String, andPassword password: String, completion: @escaping (Result<AuthenticatedUser, Error>) -> Void) {
-        let request = AuthenticationRequest.login(email: email, password: password)
-        apiManagaer.performRequest(request, completion: completion)
+    func getQuote(completion: @escaping (Result<Quote, Error>) -> Void) {
+        let request = AuthenticationRequest.quote
+        apiManagaer.performRequest(request, withName: .Quote, completion: completion)
     }
 }
