@@ -1,29 +1,37 @@
 import Foundation
 
 class LoginViewModel {
-    private var levelUpAPI: LevelUpAPI!
+    private var authenticationRepository: AuthenticationRepository!
     var bind: (() -> Void) = {}
-    var user: User = .InvalidUser
-    var headers: ResponseHeaders = ResponseHeaders(contentType: "", accessToken: "", client: "", uid: "") {
+    var user: User = .InvalidUser {
         didSet {
             self.bind()
         }
     }
-    
+
+    var authenticatedUser: AuthenticatedUser?
+
     init(email: String, password: String) {
-        self.levelUpAPI = LevelUpAPI()
+        let alamofireAPIManager: AlamofireAPIManager = AlamofireAPIManager()
+        self.authenticationRepository = AuthenticationRepository(apiManagaer: alamofireAPIManager)
         getLoginResponse(email: email, password: password)
     }
     
     func getLoginResponse(email: String, password: String) {
-        levelUpAPI.login(email: email, password: password, completion: { [weak self] currentUser, responseHeaders in
-            
-            self?.user = currentUser
-            self?.headers = ResponseHeaders(
-                contentType: responseHeaders["Content-Type"]!,
-                accessToken: responseHeaders["access-token"]!,
-                client: responseHeaders["client"]!,
-                uid: responseHeaders["uid"]!)
+        authenticationRepository.login(withEmail: email, andPassword: password, completion: {
+            (result: Result<AuthenticatedUser, Error>) in
+            switch result {
+            case .success(let authenticatedUser):
+                self.authenticatedUser = authenticatedUser
+                if self.authenticatedUser!.isFirstLogin {
+                    self.user = .NewUser
+                } else {
+                    self.user = .ExistingUser
+                }
+            case .failure(let error):
+                print("Throwing this error \(error)")
+                self.user = .InvalidUser
+            }
         })
     }
 }

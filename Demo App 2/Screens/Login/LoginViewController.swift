@@ -56,8 +56,7 @@ class LoginViewController: UIViewController {
             
             loginViewModel.bind = {
                 let user = loginViewModel.user
-                DataContainer.shared.responseHeaders = loginViewModel.headers
-                
+                                
                 let destinationVC = storyboard.instantiateViewController(withIdentifier: "UpdatePasswordViewController") as! UpdatePasswordViewController
                 self.navigationController?.pushViewController(destinationVC, animated: true)
                 
@@ -82,7 +81,6 @@ class LoginViewController: UIViewController {
     @objc func togglePasswordVisibility() {
         passwordTextField.isSecureTextEntry.toggle()
     }
-    
 }
 
 

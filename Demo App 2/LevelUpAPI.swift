@@ -1,6 +1,23 @@
 import Alamofire
 import Foundation
 
+let baseUrl: String = "https://staging.cblevelup.com/"
+
+protocol APIRequest {
+    var url: URL? { get }
+    var method: HTTPMethod { get }
+    var parameters: Parameters? { get }
+}
+
+protocol AuthProvider {
+    func authenticationHeaders() -> HTTPHeaders
+}
+
+protocol APIManager {
+    var authProvider: AuthProvider? { get set }
+    func performRequest<T: Decodable>(_ request: APIRequest, completion: @escaping (Result<T, Error>) -> Void)
+}
+
 class LevelUpAPI {
     let baseUrl: String = "https://staging.cblevelup.com/"
     
@@ -11,6 +28,18 @@ class LevelUpAPI {
             "email": email,
             "password": password
         ]
+        
+//        let alamofireAPIManager: AlamofireAPIManager = AlamofireAPIManager()
+//        let authenticationRepository: AuthenticationRepository = AuthenticationRepository(apiManagaer: alamofireAPIManager)
+//        authenticationRepository.login(withEmail: email, andPassword: password, completion: {
+//            (result: Result<AuthenticatedUser, Error>) in
+//            switch result {
+//            case .success(let authenticatedUser):
+//                print(authenticatedUser)
+//            case .failure(let error):
+//                print("Throwing this error \(error)")
+//            }
+//        })
         
         AF.request(loginUrl, method: .post, parameters: parameters, encoding: URLEncoding.default).responseJSON { response in
             
