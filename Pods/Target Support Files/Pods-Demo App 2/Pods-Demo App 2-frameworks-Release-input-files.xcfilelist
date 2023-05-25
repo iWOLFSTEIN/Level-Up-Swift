@@ -1,3 +1,4 @@
 ${PODS_ROOT}/Target Support Files/Pods-Demo App 2/Pods-Demo App 2-frameworks.sh
+${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework
 ${BUILT_PRODUCTS_DIR}/CocoaLumberjack/CocoaLumberjack.framework
 ${BUILT_PRODUCTS_DIR}/SVGKit/SVGKit.framework

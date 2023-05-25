@@ -7,22 +7,79 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		05937F7C2A1781CD00CA3B79 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05937F7B2A1781CD00CA3B79 /* LoginViewModel.swift */; };
+		05937F7E2A1782AD00CA3B79 /* LoginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05937F7D2A1782AD00CA3B79 /* LoginModel.swift */; };
+		05937F802A179DAB00CA3B79 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05937F7F2A179DAB00CA3B79 /* HomeViewModel.swift */; };
+		05937F822A179DBB00CA3B79 /* HomeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05937F812A179DBB00CA3B79 /* HomeModel.swift */; };
+		05937F852A17C14B00CA3B79 /* SharedContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05937F842A17C14B00CA3B79 /* SharedContainer.swift */; };
+		1213DF432A136399000E2FB0 /* DoTodayTableViewCalendarCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1213DF412A136399000E2FB0 /* DoTodayTableViewCalendarCell.swift */; };
+		1213DF442A136399000E2FB0 /* DoTodayTableViewCalendarCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1213DF422A136399000E2FB0 /* DoTodayTableViewCalendarCell.xib */; };
+		1213DF522A13A570000E2FB0 /* UIConfigurations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1213DF512A13A570000E2FB0 /* UIConfigurations.swift */; };
+		1213DF582A13B400000E2FB0 /* DoTodayTableViewBasicTasksCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1213DF562A13B400000E2FB0 /* DoTodayTableViewBasicTasksCell.swift */; };
+		1213DF592A13B400000E2FB0 /* DoTodayTableViewBasicTasksCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1213DF572A13B400000E2FB0 /* DoTodayTableViewBasicTasksCell.xib */; };
+		1213DF5B2A13B585000E2FB0 /* TaskTile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1213DF5A2A13B585000E2FB0 /* TaskTile.swift */; };
+		1213DF5D2A13B599000E2FB0 /* TaskTile.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1213DF5C2A13B599000E2FB0 /* TaskTile.xib */; };
+		1213DF612A14BF4A000E2FB0 /* DoTodayTableViewExtraTaskCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1213DF5F2A14BF4A000E2FB0 /* DoTodayTableViewExtraTaskCell.swift */; };
+		1213DF622A14BF4A000E2FB0 /* DoTodayTableViewExtraTaskCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1213DF602A14BF4A000E2FB0 /* DoTodayTableViewExtraTaskCell.xib */; };
+		1213DF672A14FE51000E2FB0 /* TrackItViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1213DF662A14FE51000E2FB0 /* TrackItViewController.swift */; };
+		1213DF692A1509E3000E2FB0 /* TrackItContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1213DF682A1509E3000E2FB0 /* TrackItContainer.swift */; };
+		1213DF6B2A150AA9000E2FB0 /* TrackItContainer.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1213DF6A2A150AA9000E2FB0 /* TrackItContainer.xib */; };
+		1213DF6E2A16394F000E2FB0 /* UpdatePasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1213DF6D2A16394F000E2FB0 /* UpdatePasswordViewController.swift */; };
+		1213DF702A163DDE000E2FB0 /* UpdatePasswordContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1213DF6F2A163DDE000E2FB0 /* UpdatePasswordContentView.swift */; };
+		1213DF722A164A8A000E2FB0 /* LevelUpAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1213DF712A164A8A000E2FB0 /* LevelUpAPI.swift */; };
+		1213DF762A165DEE000E2FB0 /* ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1213DF752A165DEE000E2FB0 /* ActivityIndicator.swift */; };
+		1213DF782A1B52FB000E2FB0 /* UpdatePasswordModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1213DF772A1B52FB000E2FB0 /* UpdatePasswordModel.swift */; };
+		1213DF7A2A1B5977000E2FB0 /* UpdatePasswordViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1213DF792A1B5977000E2FB0 /* UpdatePasswordViewModel.swift */; };
+		1213DF7C2A1E365C000E2FB0 /* AuthenticationRespository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1213DF7B2A1E365C000E2FB0 /* AuthenticationRespository.swift */; };
+		1213DF7E2A1E36A4000E2FB0 /* AlamofireAPIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1213DF7D2A1E36A4000E2FB0 /* AlamofireAPIManager.swift */; };
+		1213DF802A1E3701000E2FB0 /* AuthenticationRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1213DF7F2A1E3701000E2FB0 /* AuthenticationRequest.swift */; };
+		1213DF822A1E3779000E2FB0 /* UserDefaultAuth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1213DF812A1E3779000E2FB0 /* UserDefaultAuth.swift */; };
+		1213DF842A1E49AC000E2FB0 /* GeneralRespository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1213DF832A1E49AC000E2FB0 /* GeneralRespository.swift */; };
 		122640CC2A0B836F004D11B3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 122640CB2A0B836F004D11B3 /* AppDelegate.swift */; };
 		122640CE2A0B836F004D11B3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 122640CD2A0B836F004D11B3 /* SceneDelegate.swift */; };
 		122640D02A0B836F004D11B3 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 122640CF2A0B836F004D11B3 /* LoginViewController.swift */; };
 		122640D32A0B836F004D11B3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 122640D12A0B836F004D11B3 /* Main.storyboard */; };
 		122640D52A0B8370004D11B3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 122640D42A0B8370004D11B3 /* Assets.xcassets */; };
 		122640D82A0B8370004D11B3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 122640D62A0B8370004D11B3 /* LaunchScreen.storyboard */; };
-		122640E62A0CD0ED004D11B3 /* LaunchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 122640E52A0CD0ED004D11B3 /* LaunchViewController.swift */; };
 		122640EC2A0D2246004D11B3 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 122640EB2A0D2246004D11B3 /* TabBarViewController.swift */; };
 		122640EE2A0D254E004D11B3 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 122640ED2A0D254E004D11B3 /* HomeViewController.swift */; };
 		122640F02A0E697C004D11B3 /* NotificationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 122640EF2A0E697C004D11B3 /* NotificationsViewController.swift */; };
 		122640F32A0E6C45004D11B3 /* NotificationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 122640F12A0E6C45004D11B3 /* NotificationTableViewCell.swift */; };
 		122640F42A0E6C45004D11B3 /* NotificationTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 122640F22A0E6C45004D11B3 /* NotificationTableViewCell.xib */; };
+		122640F62A123415004D11B3 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 122640F52A123415004D11B3 /* SettingsViewController.swift */; };
+		12CDAD452A12531800CA9A86 /* DoTodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12CDAD442A12531800CA9A86 /* DoTodayViewController.swift */; };
 		E838AA413BBD68FA93682AAA /* Pods_Demo_App_2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6DD9D2E1BF7C9C1B953CD5F /* Pods_Demo_App_2.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		05937F7B2A1781CD00CA3B79 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		05937F7D2A1782AD00CA3B79 /* LoginModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginModel.swift; sourceTree = "<group>"; };
+		05937F7F2A179DAB00CA3B79 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		05937F812A179DBB00CA3B79 /* HomeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeModel.swift; sourceTree = "<group>"; };
+		05937F842A17C14B00CA3B79 /* SharedContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedContainer.swift; sourceTree = "<group>"; };
+		1213DF412A136399000E2FB0 /* DoTodayTableViewCalendarCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoTodayTableViewCalendarCell.swift; sourceTree = "<group>"; };
+		1213DF422A136399000E2FB0 /* DoTodayTableViewCalendarCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DoTodayTableViewCalendarCell.xib; sourceTree = "<group>"; };
+		1213DF512A13A570000E2FB0 /* UIConfigurations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIConfigurations.swift; sourceTree = "<group>"; };
+		1213DF562A13B400000E2FB0 /* DoTodayTableViewBasicTasksCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoTodayTableViewBasicTasksCell.swift; sourceTree = "<group>"; };
+		1213DF572A13B400000E2FB0 /* DoTodayTableViewBasicTasksCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DoTodayTableViewBasicTasksCell.xib; sourceTree = "<group>"; };
+		1213DF5A2A13B585000E2FB0 /* TaskTile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskTile.swift; sourceTree = "<group>"; };
+		1213DF5C2A13B599000E2FB0 /* TaskTile.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TaskTile.xib; sourceTree = "<group>"; };
+		1213DF5F2A14BF4A000E2FB0 /* DoTodayTableViewExtraTaskCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoTodayTableViewExtraTaskCell.swift; sourceTree = "<group>"; };
+		1213DF602A14BF4A000E2FB0 /* DoTodayTableViewExtraTaskCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DoTodayTableViewExtraTaskCell.xib; sourceTree = "<group>"; };
+		1213DF662A14FE51000E2FB0 /* TrackItViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackItViewController.swift; sourceTree = "<group>"; };
+		1213DF682A1509E3000E2FB0 /* TrackItContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackItContainer.swift; sourceTree = "<group>"; };
+		1213DF6A2A150AA9000E2FB0 /* TrackItContainer.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TrackItContainer.xib; sourceTree = "<group>"; };
+		1213DF6D2A16394F000E2FB0 /* UpdatePasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdatePasswordViewController.swift; sourceTree = "<group>"; };
+		1213DF6F2A163DDE000E2FB0 /* UpdatePasswordContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdatePasswordContentView.swift; sourceTree = "<group>"; };
+		1213DF712A164A8A000E2FB0 /* LevelUpAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LevelUpAPI.swift; sourceTree = "<group>"; };
+		1213DF752A165DEE000E2FB0 /* ActivityIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicator.swift; sourceTree = "<group>"; };
+		1213DF772A1B52FB000E2FB0 /* UpdatePasswordModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdatePasswordModel.swift; sourceTree = "<group>"; };
+		1213DF792A1B5977000E2FB0 /* UpdatePasswordViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdatePasswordViewModel.swift; sourceTree = "<group>"; };
+		1213DF7B2A1E365C000E2FB0 /* AuthenticationRespository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationRespository.swift; sourceTree = "<group>"; };
+		1213DF7D2A1E36A4000E2FB0 /* AlamofireAPIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlamofireAPIManager.swift; sourceTree = "<group>"; };
+		1213DF7F2A1E3701000E2FB0 /* AuthenticationRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationRequest.swift; sourceTree = "<group>"; };
+		1213DF812A1E3779000E2FB0 /* UserDefaultAuth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultAuth.swift; sourceTree = "<group>"; };
+		1213DF832A1E49AC000E2FB0 /* GeneralRespository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralRespository.swift; sourceTree = "<group>"; };
 		122640C82A0B836F004D11B3 /* Demo App 2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Demo App 2.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		122640CB2A0B836F004D11B3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		122640CD2A0B836F004D11B3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -31,12 +88,13 @@
 		122640D42A0B8370004D11B3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		122640D72A0B8370004D11B3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		122640D92A0B8370004D11B3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		122640E52A0CD0ED004D11B3 /* LaunchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchViewController.swift; sourceTree = "<group>"; };
 		122640EB2A0D2246004D11B3 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 		122640ED2A0D254E004D11B3 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		122640EF2A0E697C004D11B3 /* NotificationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsViewController.swift; sourceTree = "<group>"; };
 		122640F12A0E6C45004D11B3 /* NotificationTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationTableViewCell.swift; sourceTree = "<group>"; };
 		122640F22A0E6C45004D11B3 /* NotificationTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NotificationTableViewCell.xib; sourceTree = "<group>"; };
+		122640F52A123415004D11B3 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		12CDAD442A12531800CA9A86 /* DoTodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoTodayViewController.swift; sourceTree = "<group>"; };
 		1BA3730352953A90D7C8A23C /* Pods-Demo App 2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Demo App 2.release.xcconfig"; path = "Target Support Files/Pods-Demo App 2/Pods-Demo App 2.release.xcconfig"; sourceTree = "<group>"; };
 		98933C6B6ECA2B96B7C405D2 /* Pods-Demo App 2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Demo App 2.debug.xcconfig"; path = "Target Support Files/Pods-Demo App 2/Pods-Demo App 2.debug.xcconfig"; sourceTree = "<group>"; };
 		C6DD9D2E1BF7C9C1B953CD5F /* Pods_Demo_App_2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Demo_App_2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -54,6 +112,120 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		05937F7A2A17811A00CA3B79 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				122640CF2A0B836F004D11B3 /* LoginViewController.swift */,
+				05937F7B2A1781CD00CA3B79 /* LoginViewModel.swift */,
+				05937F7D2A1782AD00CA3B79 /* LoginModel.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		05937F832A179F8000CA3B79 /* UpdatePassword */ = {
+			isa = PBXGroup;
+			children = (
+				1213DF6D2A16394F000E2FB0 /* UpdatePasswordViewController.swift */,
+				1213DF6F2A163DDE000E2FB0 /* UpdatePasswordContentView.swift */,
+				1213DF772A1B52FB000E2FB0 /* UpdatePasswordModel.swift */,
+				1213DF792A1B5977000E2FB0 /* UpdatePasswordViewModel.swift */,
+			);
+			path = UpdatePassword;
+			sourceTree = "<group>";
+		};
+		1213DF3A2A126CEB000E2FB0 /* NotificationScreen */ = {
+			isa = PBXGroup;
+			children = (
+				122640EF2A0E697C004D11B3 /* NotificationsViewController.swift */,
+				122640F12A0E6C45004D11B3 /* NotificationTableViewCell.swift */,
+				122640F22A0E6C45004D11B3 /* NotificationTableViewCell.xib */,
+			);
+			path = NotificationScreen;
+			sourceTree = "<group>";
+		};
+		1213DF452A139621000E2FB0 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				122640F52A123415004D11B3 /* SettingsViewController.swift */,
+				122640EB2A0D2246004D11B3 /* TabBarViewController.swift */,
+				05937F7A2A17811A00CA3B79 /* Login */,
+				05937F832A179F8000CA3B79 /* UpdatePassword */,
+				1213DF662A14FE51000E2FB0 /* TrackItViewController.swift */,
+				1213DF652A14EF55000E2FB0 /* DoToday */,
+				1213DF462A13963C000E2FB0 /* Home */,
+				1213DF3A2A126CEB000E2FB0 /* NotificationScreen */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		1213DF462A13963C000E2FB0 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				122640ED2A0D254E004D11B3 /* HomeViewController.swift */,
+				05937F7F2A179DAB00CA3B79 /* HomeViewModel.swift */,
+				05937F812A179DBB00CA3B79 /* HomeModel.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		1213DF4B2A13973D000E2FB0 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				1213DF5E2A13B5A4000E2FB0 /* TaskTile */,
+				1213DF6C2A150AE4000E2FB0 /* TrackItContainer */,
+				1213DF752A165DEE000E2FB0 /* ActivityIndicator.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		1213DF5E2A13B5A4000E2FB0 /* TaskTile */ = {
+			isa = PBXGroup;
+			children = (
+				1213DF5A2A13B585000E2FB0 /* TaskTile.swift */,
+				1213DF5C2A13B599000E2FB0 /* TaskTile.xib */,
+			);
+			path = TaskTile;
+			sourceTree = "<group>";
+		};
+		1213DF632A14EF0E000E2FB0 /* DoTodayTableViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				1213DF412A136399000E2FB0 /* DoTodayTableViewCalendarCell.swift */,
+				1213DF562A13B400000E2FB0 /* DoTodayTableViewBasicTasksCell.swift */,
+				1213DF5F2A14BF4A000E2FB0 /* DoTodayTableViewExtraTaskCell.swift */,
+			);
+			path = DoTodayTableViewCells;
+			sourceTree = "<group>";
+		};
+		1213DF642A14EF28000E2FB0 /* DoTodayTableViewCellNibs */ = {
+			isa = PBXGroup;
+			children = (
+				1213DF422A136399000E2FB0 /* DoTodayTableViewCalendarCell.xib */,
+				1213DF572A13B400000E2FB0 /* DoTodayTableViewBasicTasksCell.xib */,
+				1213DF602A14BF4A000E2FB0 /* DoTodayTableViewExtraTaskCell.xib */,
+			);
+			path = DoTodayTableViewCellNibs;
+			sourceTree = "<group>";
+		};
+		1213DF652A14EF55000E2FB0 /* DoToday */ = {
+			isa = PBXGroup;
+			children = (
+				12CDAD442A12531800CA9A86 /* DoTodayViewController.swift */,
+				1213DF632A14EF0E000E2FB0 /* DoTodayTableViewCells */,
+				1213DF642A14EF28000E2FB0 /* DoTodayTableViewCellNibs */,
+			);
+			path = DoToday;
+			sourceTree = "<group>";
+		};
+		1213DF6C2A150AE4000E2FB0 /* TrackItContainer */ = {
+			isa = PBXGroup;
+			children = (
+				1213DF682A1509E3000E2FB0 /* TrackItContainer.swift */,
+				1213DF6A2A150AA9000E2FB0 /* TrackItContainer.xib */,
+			);
+			path = TrackItContainer;
+			sourceTree = "<group>";
+		};
 		122640BF2A0B836F004D11B3 = {
 			isa = PBXGroup;
 			children = (
@@ -75,19 +247,22 @@
 		122640CA2A0B836F004D11B3 /* Demo App 2 */ = {
 			isa = PBXGroup;
 			children = (
+				1213DF4B2A13973D000E2FB0 /* Components */,
+				1213DF452A139621000E2FB0 /* Screens */,
 				122640CB2A0B836F004D11B3 /* AppDelegate.swift */,
 				122640CD2A0B836F004D11B3 /* SceneDelegate.swift */,
-				122640CF2A0B836F004D11B3 /* LoginViewController.swift */,
 				122640D12A0B836F004D11B3 /* Main.storyboard */,
 				122640D42A0B8370004D11B3 /* Assets.xcassets */,
 				122640D62A0B8370004D11B3 /* LaunchScreen.storyboard */,
 				122640D92A0B8370004D11B3 /* Info.plist */,
-				122640E52A0CD0ED004D11B3 /* LaunchViewController.swift */,
-				122640EB2A0D2246004D11B3 /* TabBarViewController.swift */,
-				122640ED2A0D254E004D11B3 /* HomeViewController.swift */,
-				122640EF2A0E697C004D11B3 /* NotificationsViewController.swift */,
-				122640F12A0E6C45004D11B3 /* NotificationTableViewCell.swift */,
-				122640F22A0E6C45004D11B3 /* NotificationTableViewCell.xib */,
+				1213DF512A13A570000E2FB0 /* UIConfigurations.swift */,
+				1213DF712A164A8A000E2FB0 /* LevelUpAPI.swift */,
+				05937F842A17C14B00CA3B79 /* SharedContainer.swift */,
+				1213DF7B2A1E365C000E2FB0 /* AuthenticationRespository.swift */,
+				1213DF7D2A1E36A4000E2FB0 /* AlamofireAPIManager.swift */,
+				1213DF7F2A1E3701000E2FB0 /* AuthenticationRequest.swift */,
+				1213DF812A1E3779000E2FB0 /* UserDefaultAuth.swift */,
+				1213DF832A1E49AC000E2FB0 /* GeneralRespository.swift */,
 			);
 			path = "Demo App 2";
 			sourceTree = "<group>";
@@ -169,10 +344,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1213DF6B2A150AA9000E2FB0 /* TrackItContainer.xib in Resources */,
+				1213DF622A14BF4A000E2FB0 /* DoTodayTableViewExtraTaskCell.xib in Resources */,
 				122640F42A0E6C45004D11B3 /* NotificationTableViewCell.xib in Resources */,
+				1213DF442A136399000E2FB0 /* DoTodayTableViewCalendarCell.xib in Resources */,
 				122640D82A0B8370004D11B3 /* LaunchScreen.storyboard in Resources */,
 				122640D52A0B8370004D11B3 /* Assets.xcassets in Resources */,
+				1213DF5D2A13B599000E2FB0 /* TaskTile.xib in Resources */,
 				122640D32A0B836F004D11B3 /* Main.storyboard in Resources */,
+				1213DF592A13B400000E2FB0 /* DoTodayTableViewBasicTasksCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -225,14 +405,38 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				05937F7C2A1781CD00CA3B79 /* LoginViewModel.swift in Sources */,
+				1213DF672A14FE51000E2FB0 /* TrackItViewController.swift in Sources */,
 				122640D02A0B836F004D11B3 /* LoginViewController.swift in Sources */,
+				05937F802A179DAB00CA3B79 /* HomeViewModel.swift in Sources */,
+				1213DF842A1E49AC000E2FB0 /* GeneralRespository.swift in Sources */,
+				1213DF5B2A13B585000E2FB0 /* TaskTile.swift in Sources */,
+				1213DF7C2A1E365C000E2FB0 /* AuthenticationRespository.swift in Sources */,
+				12CDAD452A12531800CA9A86 /* DoTodayViewController.swift in Sources */,
 				122640CC2A0B836F004D11B3 /* AppDelegate.swift in Sources */,
+				1213DF722A164A8A000E2FB0 /* LevelUpAPI.swift in Sources */,
+				1213DF6E2A16394F000E2FB0 /* UpdatePasswordViewController.swift in Sources */,
 				122640CE2A0B836F004D11B3 /* SceneDelegate.swift in Sources */,
+				1213DF7A2A1B5977000E2FB0 /* UpdatePasswordViewModel.swift in Sources */,
+				1213DF582A13B400000E2FB0 /* DoTodayTableViewBasicTasksCell.swift in Sources */,
+				1213DF692A1509E3000E2FB0 /* TrackItContainer.swift in Sources */,
 				122640EC2A0D2246004D11B3 /* TabBarViewController.swift in Sources */,
+				1213DF782A1B52FB000E2FB0 /* UpdatePasswordModel.swift in Sources */,
+				05937F7E2A1782AD00CA3B79 /* LoginModel.swift in Sources */,
+				1213DF822A1E3779000E2FB0 /* UserDefaultAuth.swift in Sources */,
+				1213DF522A13A570000E2FB0 /* UIConfigurations.swift in Sources */,
+				1213DF7E2A1E36A4000E2FB0 /* AlamofireAPIManager.swift in Sources */,
+				1213DF802A1E3701000E2FB0 /* AuthenticationRequest.swift in Sources */,
+				1213DF702A163DDE000E2FB0 /* UpdatePasswordContentView.swift in Sources */,
 				122640F32A0E6C45004D11B3 /* NotificationTableViewCell.swift in Sources */,
-				122640E62A0CD0ED004D11B3 /* LaunchViewController.swift in Sources */,
+				1213DF762A165DEE000E2FB0 /* ActivityIndicator.swift in Sources */,
+				1213DF432A136399000E2FB0 /* DoTodayTableViewCalendarCell.swift in Sources */,
+				1213DF612A14BF4A000E2FB0 /* DoTodayTableViewExtraTaskCell.swift in Sources */,
+				05937F822A179DBB00CA3B79 /* HomeModel.swift in Sources */,
+				05937F852A17C14B00CA3B79 /* SharedContainer.swift in Sources */,
 				122640F02A0E697C004D11B3 /* NotificationsViewController.swift in Sources */,
 				122640EE2A0D254E004D11B3 /* HomeViewController.swift in Sources */,
+				122640F62A123415004D11B3 /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -387,6 +591,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -415,6 +620,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
