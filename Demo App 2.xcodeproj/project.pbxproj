@@ -34,6 +34,7 @@
 		1213DF802A1E3701000E2FB0 /* APIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1213DF7F2A1E3701000E2FB0 /* APIRequest.swift */; };
 		1213DF822A1E3779000E2FB0 /* AuthProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1213DF812A1E3779000E2FB0 /* AuthProvider.swift */; };
 		1213DF842A1E49AC000E2FB0 /* QuoteRespository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1213DF832A1E49AC000E2FB0 /* QuoteRespository.swift */; };
+		1213DF8B2A1F9528000E2FB0 /* Navigations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1213DF8A2A1F9528000E2FB0 /* Navigations.swift */; };
 		122640CC2A0B836F004D11B3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 122640CB2A0B836F004D11B3 /* AppDelegate.swift */; };
 		122640CE2A0B836F004D11B3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 122640CD2A0B836F004D11B3 /* SceneDelegate.swift */; };
 		122640D02A0B836F004D11B3 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 122640CF2A0B836F004D11B3 /* LoginViewController.swift */; };
@@ -78,6 +79,7 @@
 		1213DF7F2A1E3701000E2FB0 /* APIRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRequest.swift; sourceTree = "<group>"; };
 		1213DF812A1E3779000E2FB0 /* AuthProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthProvider.swift; sourceTree = "<group>"; };
 		1213DF832A1E49AC000E2FB0 /* QuoteRespository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteRespository.swift; sourceTree = "<group>"; };
+		1213DF8A2A1F9528000E2FB0 /* Navigations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Navigations.swift; sourceTree = "<group>"; };
 		122640C82A0B836F004D11B3 /* Demo App 2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Demo App 2.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		122640CB2A0B836F004D11B3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		122640CD2A0B836F004D11B3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -284,6 +286,7 @@
 				1213DF512A13A570000E2FB0 /* UIConfigurations.swift */,
 				1213DF892A1F4D97000E2FB0 /* NetworkServices */,
 				05937F842A17C14B00CA3B79 /* SharedContainer.swift */,
+				1213DF8A2A1F9528000E2FB0 /* Navigations.swift */,
 			);
 			path = "Demo App 2";
 			sourceTree = "<group>";
@@ -441,6 +444,7 @@
 				1213DF582A13B400000E2FB0 /* DoTodayTableViewBasicTasksCell.swift in Sources */,
 				1213DF692A1509E3000E2FB0 /* TrackItContainer.swift in Sources */,
 				122640EC2A0D2246004D11B3 /* TabBarViewController.swift in Sources */,
+				1213DF8B2A1F9528000E2FB0 /* Navigations.swift in Sources */,
 				1213DF782A1B52FB000E2FB0 /* UpdatePasswordModel.swift in Sources */,
 				05937F7E2A1782AD00CA3B79 /* LoginModel.swift in Sources */,
 				1213DF822A1E3779000E2FB0 /* AuthProvider.swift in Sources */,

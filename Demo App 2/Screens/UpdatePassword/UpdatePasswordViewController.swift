@@ -28,9 +28,7 @@ class UpdatePasswordViewController: UIViewController {
                 let updatePasswordResponse = updatePasswordViewModel.updatePasswordResponse
                 
                 if !updatePasswordResponse.message.isEmpty {
-                    let storyboard = UIStoryboard(name: "Main", bundle: nil)
-                    let destinationVC = storyboard.instantiateViewController(withIdentifier: "TabBarViewController") as! UITabBarController
-                    self.navigationController?.pushViewController(destinationVC, animated: true)
+                    pushViewController(TabBarViewController.self, fromStoryboard: "Main", navigationController: self.navigationController)
                 }
             }
         }

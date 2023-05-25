@@ -10,7 +10,7 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var loginButton: UIButton!
     @IBOutlet weak var usernameTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
-        
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -44,10 +44,6 @@ class LoginViewController: UIViewController {
     }
     
     @IBAction func login( _ sender: UIButton) {
-        let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        
-
-        
         if let username = usernameTextField.text, let password = passwordTextField.text {
             
             ActivityIndicator.shared.showActivityIndicator(on: self.view, withAlpha: 0.5)
@@ -58,21 +54,15 @@ class LoginViewController: UIViewController {
             
             loginViewModel.bind = {
                 let user = loginViewModel.user
-                                
-                //Make a generic method for instantiating controller
-                let destinationVC = storyboard.instantiateViewController(withIdentifier: "UpdatePasswordViewController") as! UpdatePasswordViewController
-                self.navigationController?.pushViewController(destinationVC, animated: true)
+                
+                pushViewController(UpdatePasswordViewController.self, fromStoryboard: "Main", navigationController: self.navigationController)
                 
                 if false {
-                
-                    
                     if user == .NewUser {
-                        let destinationVC = storyboard.instantiateViewController(withIdentifier: "UpdatePasswordViewController") as! UpdatePasswordViewController
-                        self.navigationController?.pushViewController(destinationVC, animated: true)
+                        pushViewController(UpdatePasswordViewController.self, fromStoryboard: "Main", navigationController: self.navigationController)
                     }
                     else if user == .ExistingUser {
-                        let destinationVC  = storyboard.instantiateViewController(withIdentifier: "TabBarViewController") as! TabBarViewController
-                        self.navigationController?.pushViewController(destinationVC, animated: true)
+                        pushViewController(TabBarViewController.self, fromStoryboard: "Main", navigationController: self.navigationController)
                     }
                 }
                 
