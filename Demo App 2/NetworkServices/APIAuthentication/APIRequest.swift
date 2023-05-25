@@ -7,7 +7,7 @@ protocol APIRequest {
     var url: URL? { get }
     var method: HTTPMethod { get }
     var parameters: Parameters? { get }
-    // add a property requiresAuth
+    var requiresAuth: Bool { get }
 }
 
 enum AuthenticationRequest: APIRequest {
@@ -48,12 +48,24 @@ enum AuthenticationRequest: APIRequest {
     
     var url: URL? {
         switch self {
-        case .login :
+        case .login:
             return URL(string: "\(baseUrl)/api/v1/users/sign_in.json")
         case .quote:
             return URL(string: "\(baseUrl)/api/v1/quotes/random.json")
         case .updatePassord:
             return URL(string: "\(baseUrl)/api/v1/user/change_password.json")
         }
+    }
+    
+    var requiresAuth: Bool {
+        switch self {
+        case .login(_, _):
+            return false
+        case .quote:
+            return true
+        case .updatePassord(_):
+            return true
+        }
+        
     }
 }

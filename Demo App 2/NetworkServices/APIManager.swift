@@ -29,18 +29,23 @@ class AlamofireAPIManager: APIManager {
             return
         }
         
+        let headers = authProvider?.authenticationHeaders()
         let encoding: ParameterEncoding = request.method == .get ? URLEncoding() : JSONEncoding()
         
-        // add check. Only add headers if the request requires authentication
-        let headers = authProvider?.authenticationHeaders()
-        
-        AF.request(
+        let alamofireRequest = request.requiresAuth ? AF.request(
             url,
             method: request.method,
             parameters: request.parameters,
             encoding: encoding,
             headers: headers
-        ).validate().responseDecodable(of: T.self) { response in
+        ) : AF.request(
+            url,
+            method: request.method,
+            parameters: request.parameters,
+            encoding: encoding
+        )
+        
+        alamofireRequest.validate().responseDecodable(of: T.self) { response in
             switch response.result {
             case .success(let value):
                 if let headers = response.response?.allHeaderFields as? NSDictionary {
