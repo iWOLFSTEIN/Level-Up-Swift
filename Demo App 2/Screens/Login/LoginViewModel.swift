@@ -40,7 +40,7 @@ class LoginViewModel {
                 case .success(let quote):
                     print(quote)
                 case .failure(let error):
-                    print("Error Getting Quote is: \(error)")
+                    print("Error Getting Quote: \(error)")
                 }
             }
             

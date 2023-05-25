@@ -27,6 +27,7 @@ class AlamofireAPIManager: APIManager {
         let encoding: ParameterEncoding = request.method == .get ? URLEncoding() : JSONEncoding()
         let headers = authProvider?.authenticationHeaders()
         
+        
         AF.request(
             url,
             method: request.method,
@@ -36,7 +37,6 @@ class AlamofireAPIManager: APIManager {
         ).validate().responseDecodable(of: T.self) { response in
             switch response.result {
             case .success(let value):
-                completion(.success(value))
                 if requestName == .Login {
                     if let responseHeaders = response.response?.allHeaderFields as? [String: String] {
                         DataContainer.shared.responseHeaders = ResponseHeaders(
@@ -46,6 +46,7 @@ class AlamofireAPIManager: APIManager {
                             uid: responseHeaders["uid"]!)
                     }
                 }
+                completion(.success(value))
             case .failure(let error):
                 completion(.failure(error))
             }
