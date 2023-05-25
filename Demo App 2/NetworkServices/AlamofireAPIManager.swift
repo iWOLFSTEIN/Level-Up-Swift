@@ -19,14 +19,15 @@ class AlamofireAPIManager: APIManager {
         }
     }
     
-    func performRequest<T: Decodable>(_ request: APIRequest, withName requestName: RequestName, completion: @escaping (Result<T, Error>) -> Void) {
+    func performRequest<T: Decodable>(_ request: APIRequest, completion: @escaping (Result<(T, NSDictionary), Error>) -> Void) {
         guard let url = request.url else {
             return
         }
         
         let encoding: ParameterEncoding = request.method == .get ? URLEncoding() : JSONEncoding()
-        let headers = authProvider?.authenticationHeaders()
         
+        // add check. Only add headers if the request requires authentication
+        let headers = authProvider?.authenticationHeaders()
         
         AF.request(
             url,
@@ -37,16 +38,11 @@ class AlamofireAPIManager: APIManager {
         ).validate().responseDecodable(of: T.self) { response in
             switch response.result {
             case .success(let value):
-                if requestName == .Login {
-                    if let responseHeaders = response.response?.allHeaderFields as? [String: String] {
-                        DataContainer.shared.responseHeaders = ResponseHeaders(
-                            contentType: responseHeaders["Content-Type"]!,
-                            accessToken: responseHeaders["access-token"]!,
-                            client: responseHeaders["client"]!,
-                            uid: responseHeaders["uid"]!)
-                    }
+                if let headers = response.response?.allHeaderFields as? NSDictionary {
+                    completion(.success((value, headers)))
+                } else {
+                    completion(.success((value, [:])))
                 }
-                completion(.success(value))
             case .failure(let error):
                 completion(.failure(error))
             }

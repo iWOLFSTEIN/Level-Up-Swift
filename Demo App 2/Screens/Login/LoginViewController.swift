@@ -46,6 +46,8 @@ class LoginViewController: UIViewController {
     @IBAction func login( _ sender: UIButton) {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         
+
+        
         if let username = usernameTextField.text, let password = passwordTextField.text {
             
             ActivityIndicator.shared.showActivityIndicator(on: self.view, withAlpha: 0.5)
@@ -57,10 +59,13 @@ class LoginViewController: UIViewController {
             loginViewModel.bind = {
                 let user = loginViewModel.user
                                 
+                //Make a generic method for instantiating controller
                 let destinationVC = storyboard.instantiateViewController(withIdentifier: "UpdatePasswordViewController") as! UpdatePasswordViewController
                 self.navigationController?.pushViewController(destinationVC, animated: true)
                 
                 if false {
+                
+                    
                     if user == .NewUser {
                         let destinationVC = storyboard.instantiateViewController(withIdentifier: "UpdatePasswordViewController") as! UpdatePasswordViewController
                         self.navigationController?.pushViewController(destinationVC, animated: true)

@@ -34,8 +34,7 @@
 		1213DF7E2A1E36A4000E2FB0 /* AlamofireAPIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1213DF7D2A1E36A4000E2FB0 /* AlamofireAPIManager.swift */; };
 		1213DF802A1E3701000E2FB0 /* AuthenticationRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1213DF7F2A1E3701000E2FB0 /* AuthenticationRequest.swift */; };
 		1213DF822A1E3779000E2FB0 /* UserDefaultAuth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1213DF812A1E3779000E2FB0 /* UserDefaultAuth.swift */; };
-		1213DF842A1E49AC000E2FB0 /* GeneralRespository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1213DF832A1E49AC000E2FB0 /* GeneralRespository.swift */; };
-		1213DF862A1F4AB2000E2FB0 /* PasswordManagerRespository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1213DF852A1F4AB2000E2FB0 /* PasswordManagerRespository.swift */; };
+		1213DF842A1E49AC000E2FB0 /* QuoteRespository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1213DF832A1E49AC000E2FB0 /* QuoteRespository.swift */; };
 		122640CC2A0B836F004D11B3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 122640CB2A0B836F004D11B3 /* AppDelegate.swift */; };
 		122640CE2A0B836F004D11B3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 122640CD2A0B836F004D11B3 /* SceneDelegate.swift */; };
 		122640D02A0B836F004D11B3 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 122640CF2A0B836F004D11B3 /* LoginViewController.swift */; };
@@ -80,8 +79,7 @@
 		1213DF7D2A1E36A4000E2FB0 /* AlamofireAPIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlamofireAPIManager.swift; sourceTree = "<group>"; };
 		1213DF7F2A1E3701000E2FB0 /* AuthenticationRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationRequest.swift; sourceTree = "<group>"; };
 		1213DF812A1E3779000E2FB0 /* UserDefaultAuth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultAuth.swift; sourceTree = "<group>"; };
-		1213DF832A1E49AC000E2FB0 /* GeneralRespository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralRespository.swift; sourceTree = "<group>"; };
-		1213DF852A1F4AB2000E2FB0 /* PasswordManagerRespository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordManagerRespository.swift; sourceTree = "<group>"; };
+		1213DF832A1E49AC000E2FB0 /* QuoteRespository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteRespository.swift; sourceTree = "<group>"; };
 		122640C82A0B836F004D11B3 /* Demo App 2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Demo App 2.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		122640CB2A0B836F004D11B3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		122640CD2A0B836F004D11B3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -232,8 +230,7 @@
 			isa = PBXGroup;
 			children = (
 				1213DF7B2A1E365C000E2FB0 /* AuthenticationRespository.swift */,
-				1213DF832A1E49AC000E2FB0 /* GeneralRespository.swift */,
-				1213DF852A1F4AB2000E2FB0 /* PasswordManagerRespository.swift */,
+				1213DF832A1E49AC000E2FB0 /* QuoteRespository.swift */,
 			);
 			path = APIRespositories;
 			sourceTree = "<group>";
@@ -436,7 +433,7 @@
 				1213DF672A14FE51000E2FB0 /* TrackItViewController.swift in Sources */,
 				122640D02A0B836F004D11B3 /* LoginViewController.swift in Sources */,
 				05937F802A179DAB00CA3B79 /* HomeViewModel.swift in Sources */,
-				1213DF842A1E49AC000E2FB0 /* GeneralRespository.swift in Sources */,
+				1213DF842A1E49AC000E2FB0 /* QuoteRespository.swift in Sources */,
 				1213DF5B2A13B585000E2FB0 /* TaskTile.swift in Sources */,
 				1213DF7C2A1E365C000E2FB0 /* AuthenticationRespository.swift in Sources */,
 				12CDAD452A12531800CA9A86 /* DoTodayViewController.swift in Sources */,
@@ -447,7 +444,6 @@
 				1213DF7A2A1B5977000E2FB0 /* UpdatePasswordViewModel.swift in Sources */,
 				1213DF582A13B400000E2FB0 /* DoTodayTableViewBasicTasksCell.swift in Sources */,
 				1213DF692A1509E3000E2FB0 /* TrackItContainer.swift in Sources */,
-				1213DF862A1F4AB2000E2FB0 /* PasswordManagerRespository.swift in Sources */,
 				122640EC2A0D2246004D11B3 /* TabBarViewController.swift in Sources */,
 				1213DF782A1B52FB000E2FB0 /* UpdatePasswordModel.swift in Sources */,
 				05937F7E2A1782AD00CA3B79 /* LoginModel.swift in Sources */,

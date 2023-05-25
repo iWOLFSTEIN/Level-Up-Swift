@@ -12,6 +12,8 @@ class HomeViewController: UIViewController {
     @IBOutlet weak var quoteAutherLabel: UILabel!
     @IBOutlet weak var quoteTextLabel: UILabel!
     
+    let viewModel = HomeViewModel()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -48,9 +50,9 @@ class HomeViewController: UIViewController {
         DispatchQueue.main.async {
             ActivityIndicator.shared.showActivityIndicator(on: self.view, withAlpha: 1.0)
         }
-        let homeViewModel = HomeViewModel()
-        homeViewModel.bind = {
-            guard let quote = homeViewModel.quote else {
+               
+        viewModel.bind = {
+            guard let quote = self.viewModel.quote else {
                 DispatchQueue.main.async {
                     ActivityIndicator.shared.hideActivityIndicator()
                 }
@@ -64,3 +66,4 @@ class HomeViewController: UIViewController {
         }
     }
 }
+
