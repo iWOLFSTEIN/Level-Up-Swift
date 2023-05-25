@@ -1,6 +1,10 @@
 import Alamofire
 import Foundation
 
+protocol AuthProvider {
+    func authenticationHeaders() -> HTTPHeaders
+}
+
 class UserDefaultAuth : AuthProvider {
     func authenticationHeaders() -> Alamofire.HTTPHeaders {
         guard let responseHeaders: ResponseHeaders = DataContainer.shared.responseHeaders else {

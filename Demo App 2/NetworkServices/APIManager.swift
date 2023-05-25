@@ -1,6 +1,11 @@
 import Alamofire
 import Foundation
 
+protocol APIManager {
+    var authProvider: AuthProvider? { get set }
+    func performRequest<T: Decodable>(_ request: APIRequest, completion: @escaping (Result<(T, NSDictionary), Error>) -> Void)
+}
+
 class AlamofireAPIManager: APIManager {
     
     var authProvider: AuthProvider?

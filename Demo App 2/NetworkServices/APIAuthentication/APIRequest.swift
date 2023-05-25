@@ -1,6 +1,15 @@
 import Alamofire
 import Foundation
 
+let baseUrl: String = "https://staging.cblevelup.com/"
+
+protocol APIRequest {
+    var url: URL? { get }
+    var method: HTTPMethod { get }
+    var parameters: Parameters? { get }
+    // add a property requiresAuth
+}
+
 enum AuthenticationRequest: APIRequest {
     case login (email: String, password: String)
     case quote
