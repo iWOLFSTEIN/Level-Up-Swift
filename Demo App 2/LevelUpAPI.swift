@@ -3,6 +3,10 @@ import Foundation
 
 let baseUrl: String = "https://staging.cblevelup.com/"
 
+protocol RequestParameters {
+    
+}
+
 protocol APIRequest {
     var url: URL? { get }
     var method: HTTPMethod { get }
