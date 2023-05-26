@@ -1,3 +1,4 @@
+import Combine
 import Foundation
 
 class LoginViewModel {
@@ -16,7 +17,7 @@ class LoginViewModel {
         self.authenticationRepository = AuthenticationRepository(apiManagaer: alamofireAPIManager)
         getLoginResponse(email: email, password: password)
     }
-    
+
     func getLoginResponse(email: String, password: String) {
         authenticationRepository.login(withEmail: email, andPassword: password, completion: {
             (result: Result<AuthenticatedUser, Error>) in
@@ -35,3 +36,4 @@ class LoginViewModel {
         })
     }
 }
+
