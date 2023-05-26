@@ -3,7 +3,7 @@ import Foundation
 class LoginViewModel {
     private var authenticationRepository: AuthenticationRepository!
     var bind: (() -> Void) = {}
-    var user: User = .InvalidUser {
+    var user: User = .invalidUser {
         didSet {
             self.bind()
         }
@@ -24,13 +24,13 @@ class LoginViewModel {
             case .success(let authenticatedUser):
                 self.authenticatedUser = authenticatedUser
                 if self.authenticatedUser!.isFirstLogin {
-                    self.user = .NewUser
+                    self.user = .newUser
                 } else {
-                    self.user = .ExistingUser
+                    self.user = .existingUser
                 }
             case .failure(let error):
                 print("Throwing this error \(error)")
-                self.user = .InvalidUser
+                self.user = .invalidUser
             }
         })
     }

@@ -55,15 +55,13 @@ class LoginViewController: UIViewController {
             loginViewModel.bind = {
                 let user = loginViewModel.user
                 
-                pushViewController(UpdatePasswordViewController.self, fromStoryboard: "Main", navigationController: self.navigationController)
-                
-                if false {
-                    if user == .NewUser {
-                        pushViewController(UpdatePasswordViewController.self, fromStoryboard: "Main", navigationController: self.navigationController)
-                    }
-                    else if user == .ExistingUser {
-                        pushViewController(TabBarViewController.self, fromStoryboard: "Main", navigationController: self.navigationController)
-                    }
+                switch user {
+                case .newUser:
+                    pushViewController(UpdatePasswordViewController.self, fromStoryboard: "Main", navigationController: self.navigationController)
+                case .existingUser:
+                    pushViewController(UpdatePasswordViewController.self, fromStoryboard: "Main", navigationController: self.navigationController)
+                case .invalidUser:
+                    showErrorAlert(title: "Error", message: "Unable to verify credentials")
                 }
                 
                 DispatchQueue.main.async {

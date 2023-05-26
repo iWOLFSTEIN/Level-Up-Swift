@@ -1,7 +1,7 @@
 import Foundation
 
 enum User {
-    case NewUser, ExistingUser, InvalidUser
+    case newUser, existingUser, invalidUser
 }
 
 struct ResponseHeaders {

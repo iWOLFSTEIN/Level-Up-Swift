@@ -23,6 +23,7 @@ class HomeViewModel {
                 self?.quote = quote
             case .failure(let error):
                 print("Error Getting Quote: \(error)")
+                showErrorAlert(title: "Error", message: "An error occurred while fetching quote")
             }
         }
     }

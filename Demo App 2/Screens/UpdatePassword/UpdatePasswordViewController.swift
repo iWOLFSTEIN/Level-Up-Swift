@@ -16,11 +16,18 @@ class UpdatePasswordViewController: UIViewController {
         
         if let password = contentView.passwordTextField.text,
            let passwordConfirmation = contentView.confirmPasswordTextField.text {
-            ActivityIndicator.shared.showActivityIndicator(on: self.view, withAlpha: 0.5)
             
             let currentPassword = "123456"
             let password = password.isEmpty ? "123456" : password
             let passwordConfirmation = passwordConfirmation.isEmpty ? "123456" : passwordConfirmation
+            
+            if password != passwordConfirmation {
+                showErrorAlert(title: "Error", message: "Passwords don't match")
+                return
+            }
+            
+            ActivityIndicator.shared.showActivityIndicator(on: self.view, withAlpha: 0.5)
+
             let updatePasswordData = UpdatePasswordData(password: password, passwordConfirmation: passwordConfirmation, currentPassword: currentPassword)
             let updatePasswordViewModel = UpdatePasswordViewModel(updationData: updatePasswordData)
             

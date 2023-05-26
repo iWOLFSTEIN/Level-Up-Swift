@@ -23,6 +23,7 @@ class UpdatePasswordViewModel {
                 self?.updatePasswordResponse = updatePasswordResponse
             case .failure(let error):
                 print("Error Updating Password (First Time): \(error)")
+                showErrorAlert(title: "Error", message: "An error occurred while updating password")
             }
         })
     }
