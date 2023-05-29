@@ -47,23 +47,18 @@ class HomeViewController: UIViewController {
     }
     
     func updateQuote() {
-        DispatchQueue.main.async {
-            ActivityIndicator.shared.showActivityIndicator(on: self.view, withAlpha: 1.0)
-        }
-               
-        viewModel.bind = {
-            guard let quote = self.viewModel.quote else {
-                DispatchQueue.main.async {
-                    ActivityIndicator.shared.hideActivityIndicator()
-                }
+        ActivityIndicator.shared.showActivityIndicator(on: self.view, withAlpha: 1.0)
+        
+        viewModel.$quote.sink {
+            quote in
+            guard let quote = quote else {
                 return
             }
-            DispatchQueue.main.async {
-                self.quoteAutherLabel.text = quote.author
-                self.quoteTextLabel.text = quote.text
-                ActivityIndicator.shared.hideActivityIndicator()
-            }
+            self.quoteAutherLabel.text = quote.author
+            self.quoteTextLabel.text = quote.text
+            ActivityIndicator.shared.hideActivityIndicator()
         }
+        .store(in: &viewModel.cancellables)
     }
 }
 

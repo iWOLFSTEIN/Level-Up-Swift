@@ -3,6 +3,9 @@ import UIKit
 class UpdatePasswordViewController: UIViewController {
     
     @IBOutlet var contentView: UpdatePasswordContentView!
+    
+    var viewModel: UpdatePasswordViewModel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -27,17 +30,17 @@ class UpdatePasswordViewController: UIViewController {
             }
             
             ActivityIndicator.shared.showActivityIndicator(on: self.view, withAlpha: 0.5)
-
-            let updatePasswordData = UpdatePasswordData(password: password, passwordConfirmation: passwordConfirmation, currentPassword: currentPassword)
-            let updatePasswordViewModel = UpdatePasswordViewModel(updationData: updatePasswordData)
             
-            updatePasswordViewModel.bind = {
-                let updatePasswordResponse = updatePasswordViewModel.updatePasswordResponse
+            let updatePasswordData = UpdatePasswordData(password: password, passwordConfirmation: passwordConfirmation, currentPassword: currentPassword)
+            viewModel = UpdatePasswordViewModel(updationData: updatePasswordData)
+            viewModel.$updatePasswordResponse.sink {
+                updatePasswordResponse in
                 
                 if !updatePasswordResponse.message.isEmpty {
                     pushViewController(TabBarViewController.self, fromStoryboard: "Main", navigationController: self.navigationController)
                 }
             }
+            .store(in: &viewModel.cancellables)
         }
     }
 }

@@ -1,10 +1,3 @@
-//
-//  UpdatePasswordView.swift
-//  Demo App 2
-//
-//  Created by BrainX Technologies on 18/05/2023.
-//
-
 import UIKit
 
 class UpdatePasswordContentView: UIView {

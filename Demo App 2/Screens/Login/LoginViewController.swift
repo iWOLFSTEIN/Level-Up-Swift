@@ -1,3 +1,4 @@
+import Combine
 import SVGKit
 import UIKit
 
@@ -10,6 +11,8 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var loginButton: UIButton!
     @IBOutlet weak var usernameTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
+    
+    var viewModel: LoginViewModel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -50,24 +53,25 @@ class LoginViewController: UIViewController {
             
             let username = username.isEmpty ? "agent_0@mailinator.com" : username
             let password = password.isEmpty ? "123456" : password
-            let loginViewModel = LoginViewModel(email: username, password: password)
+            viewModel = LoginViewModel(email: username, password: password)
             
-            loginViewModel.bind = {
-                let user = loginViewModel.user
-                
-                switch user {
-                case .newUser:
-                    pushViewController(UpdatePasswordViewController.self, fromStoryboard: "Main", navigationController: self.navigationController)
-                case .existingUser:
-                    pushViewController(UpdatePasswordViewController.self, fromStoryboard: "Main", navigationController: self.navigationController)
-                case .invalidUser:
-                    showErrorAlert(title: "Error", message: "Unable to verify credentials")
-                }
-                
-                DispatchQueue.main.async {
+            viewModel.$user
+                .sink { user in
+                    guard let user else {
+                        return
+                    }
+                    switch user {
+                    case .newUser:
+                        pushViewController(UpdatePasswordViewController.self, fromStoryboard: "Main", navigationController: self.navigationController)
+                    case .existingUser:
+                        pushViewController(UpdatePasswordViewController.self, fromStoryboard: "Main", navigationController: self.navigationController)
+                    case .invalidUser:
+                        showErrorAlert(title: "Error", message: "Unable to verify credentials")
+                    }
+                    
                     ActivityIndicator.shared.hideActivityIndicator()
                 }
-            }
+                .store(in: &viewModel.cancellables)
         }
     }
     
