@@ -1,7 +1,7 @@
 import Combine
 import Foundation
 
-class LoginViewModel: ObservableObject {
+class LoginViewModel {
     private var authenticationRepository: AuthenticationRepository!
     
     @Published var user: User?
